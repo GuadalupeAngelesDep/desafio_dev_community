@@ -18,7 +18,7 @@
 
 
 /*Seccion  Tableta*/
-@media only screen and (min-width:768px){
+// @media only screen and (min-width:768px){
   /*Aside izquierda (mario) */
 
 
@@ -31,14 +31,22 @@
 
 
 /*footer*/
-}
+// }
 
 
-@media only screen and (min-width:1024px){
+// @media only screen and (min-width:1024px){
    /*Aside izquierda (mario) */
 
 
     /*Aside de la derecha victor*/
+    .card-header {
+      height: 40px;
+    }
+
+    .card-title {
+      font-size: var(rgb(10, 9, 9));
+    }
+
 
     /*Main mario*/
 
@@ -47,4 +55,4 @@
 
 
 /*footer*/
-}
+// }
