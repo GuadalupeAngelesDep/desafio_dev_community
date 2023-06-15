@@ -1,3 +1,15 @@
 $colorBackground: #f5f5f5;
 $colorPost: #ffffff;
 $colorFollowbutton: #3b49df; //color del boton de follow //
+
+
+$spacers: (
+    (
+    0: 0,
+    1: ($spacers * .25),
+    2: ($spacers * .5),
+    3: ($spacers * 1),
+    4: ($spacers * 1.5),
+    5: ($spacers * 3),
+    6: ($spacers * 4)
+    ),$spacers);

@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/scss/style_post.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <title>Document</title>
@@ -15,8 +16,8 @@
 
   <!--Aside izquierda (mario) -->
   <main class="post_main container">
-    <aside class="post_socials row ">
-      <section class="post_socials_like col-1 ">
+    <aside class="post_socials row">
+      <section class="post_socials_like col-1 d-none d-md-block ps-1 pt-5">
         
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" role="img"
           aria-hidden="true" class="crayons-icon">
@@ -30,7 +31,7 @@
               <rect width="24" height="24" fill="white"></rect>
             </clipPath>
           </defs>
-        </svg> <span class="post_socials_like_number ms-1 mt-1 mb-3">89</span>
+        </svg> <span class="post_socials_like_number d-flex align-items-stretch ms-1 mt-1 mb-3">89</span>
 
 
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-hidden="true"
@@ -39,7 +40,7 @@
             d="M10 3h4a8 8 0 010 16v3.5c-5-2-12-5-12-11.5a8 8 0 018-8zm2 14h2a6 6 0 000-12h-4a6 6 0 00-6 6c0 3.61 2.462 5.966 8 8.48V17z">
           </path>
         </svg>
-        <span class="post_socials_comment_number ms-2 mt-1 mb-3">3</span>
+        <span class="post_socials_comment_number d-flex align-items-stretch ms-2 mt-1 mb-3">3</span>
       
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-hidden="true"
           class="crayons-icon">
@@ -47,7 +48,7 @@
             d="M5 2h14a1 1 0 011 1v19.143a.5.5 0 01-.766.424L12 18.03l-7.234 4.536A.5.5 0 014 22.143V3a1 1 0 011-1zm13 2H6v15.432l6-3.761 6 3.761V4z">
           </path>
         </svg>
-        <span class="post_socials_save_number ms-1 mt-1 mb-3">41</span>
+        <span class="post_socials_save_number d-flex align-items-stretch ms-1 mt-1 mb-3">41</span>
       
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img"
           aria-labelledby="ajcqnc69jzhds107ov3f7zzfmjocoyb6" aria-hidden="true" class="crayons-icon dropdown-icon">
@@ -59,12 +60,23 @@
       </section>
 
       <section class="post_main_picture col-6">
-        <img class="img-fluid" src="/imagenes/pexels-photo-2387418.jpeg" alt="">
+        <img class="post_main_picture_dev rounded-top" src="/imagenes/pexels-photo-2387418.jpeg" alt="">
     
       </section>
 
+      
     </aside>
 
+
+    <section class="post_main_information card rounded-0">
+      
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
+          This content is a little bit longer.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </section>
     
   </main>
   <!--Aside de la derecha Victor-->
