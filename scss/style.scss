@@ -1,3 +1,4 @@
+
 /*Seccion MOBILE */
  /*Navbar */
 /*Aside izquierda (Nefer) */
@@ -19,7 +20,7 @@
 
 
 /*Seccion  Tableta*/
-@media only screen and (min-width:768px){
+/*@media only screen and (min-width:768px){*/
      /*Navbar */
 /*Aside izquierda (Nefer) */
 
@@ -34,7 +35,7 @@
 
 
 /*footer*/
-}
+/*}*/
 @media only screen and (min-width:1024px){
     /*Navbar */
 /*Aside izquierda (Nefer) */
@@ -46,7 +47,12 @@
 
    
    /*Aside de la derecha Mich*/
-
+ .watercooler__header:hover {
+    color: rgb(59, 73, 223, 1); 
+ }
+ .watercooler__div:hover {
+    color: rgb(59, 73, 223, 1);
+}
 
 
 /*footer*/
