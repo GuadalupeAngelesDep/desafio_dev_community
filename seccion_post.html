@@ -89,31 +89,31 @@
 
               </section>
 
-              <section class="post_main_reactions d-flex  justify-content-center ms-auto ">
-                <section class="mx-4">
+              <section class="post_main_reactions d-flex  justify-content-start ms-auto ">
+                <section class="mx-3">
                   <img
                     src="https://dev.to/assets/sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg"
                     width="24" height="24"> 1
                 </section>
-                <section class="mx-4">
+                <section class="mx-3">
                   <img
                     src="https://dev.to/assets/multi-unicorn-b44d6f8c23cdd00964192bedc38af3e82463978aa611b4365bd33a0f1f4f3e97.svg"
                     width="24" height="24"> 1
                 </section>
 
-                <section class="mx-4">
+                <section class="mx-3">
                   <img
                     src="https://dev.to/assets/exploding-head-daceb38d627e6ae9b730f36a1e390fca556a4289d5a41abb2c35068ad3e2c4b5.svg"
                     width="24" height="24"> 1
                 </section>
 
-                <section class="mx-4">
+                <section class="mx-3">
                   <img
                     src="https://dev.to/assets/raised-hands-74b2099fd66a39f2d7eed9305ee0f4553df0eb7b4f11b01b6b1b499973048fe5.svg"
                     width="24" height="24">1
                 </section>
 
-                <section class="mx-4">
+                <section class="mx-3">
                   <img
                     src="https://dev.to/assets/fire-f60e7a582391810302117f987b22a8ef04a2fe0df7e3258a5f49332df1cec71e.svg"
                     width="24" height="24">1
@@ -133,8 +133,50 @@
                 <span class="card-text">#webdev</span>
                 <span class="card-text">#beginners</span>
               </section>
+            </section>
+
+
+            <section class="ms-5 mt-4 p-4">
+              <p class="post_subtitle ms-1">Creating the First View - Hello World!</p>
+
+              <p>Let's start by creating a simple view that will return a simple Hello World text.</p>
+
+              <p>For that, we first need to tell Django to include our app (the app that we created before using the django-admin
+              startapp command) in the project.</p>
+
+              <P>We will open the settings.py file. There would be a list named INSTALLED_APPS . We just need to add our app name to that
+              file. This allows Django to recognize and include your app in the project.</P>
+
+              <P>Somewhat like this:</P>
+
+              <section class="d-flex">
+                <img class="post_image rounded-2" src="/imagenes/Screenshot_6.png" alt="">
+
+              </section>
+
+              <p class="mt-3">Here, quiz is the name of the app I created before.</p>
+                              
+              <P>Now, we will create a function that will take the request as a parameter & return Hello World! or anything you like.
+              Kindly note, that request is a required parameter as it will contain all the details of the HTTP request.</p>
               
+              <P>We will create this function in quiz/views.py file.</p>
               
+              <P>Since we want to return plain text in the HTTP response, we will import it here.</p>
+              
+              <P>HttpResponse is used to return plain text in the HTTP response. django.shortcuts already provide us with many methods
+              through which we can return data.</p>
+              
+              <P>The file will look like this:</p>
+
+              <section class="d-flex">
+                <img src="/imagenes/Screenshot_1.png" alt="">
+              </section>
+
+              <p class="mt-3">Now to map this function to the home URL, we will edit the urls.py file.</p>
+              <p>urls.py file already contains a list by the name of urlpatterns. We will add our routes to this. Since we want to
+              display Hello World on our homepage, our path will just be an empty string. And to map it to that function, we will
+              import quiz.views here.</p>
+              <p>Our views.py file should look something like this now:</p>
 
             </section>
           </section>
