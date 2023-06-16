@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DEV Community</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="./scss/style.css">
+</head>
+
+<body>
+  <!--Navbar -->
+  <nav class="navbar bg-body-tertiary h-50">
+    <div class="container">
+      <div class="container__left d-flex align-items-center">
+        <button class="button__burger h-25 border border-0 bg-transparent d-lg-none d-md-none d-sm-block "data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+          <img src="./icon/burger.svg" alt=""></button>
+          <div class="offcanvas offcanvas-start d-sm-block" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Dev Community</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <nav class="col-lg-3 col-md-3" data-testid="main-nav" aria-label="DEV Community">
+                    <ul class="">
+                      <li>
+                        <a href="#" class="">
+                          <span class="c-link__icon">
+                            <img src="./icon/home_icon.svg" alt="">
+                          </span>
+                          Home
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="sidebar-navigation-link c-link c-link--block c-link--icon-left">
+                          <span class="c-link__icon">
+                            <img src="./icon/listing_icon.svg" alt="">
+                          </span>
+                          Listings
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="sidebar-navigation-link c-link c-link--block c-link--icon-left">
+                          <span class="c-link__icon">
+                            <img src="./icon/Podcasts.svg" alt="">
+                          </span>
+                          Podcasts
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="sidebar-navigation-link c-link c-link--block c-link--icon-left">
+                          <span class="c-link__icon">
+                            <img src="./icon/icon_videos.svg" alt="">
+                          </span>
+                          Videos
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="sidebar-navigation-link c-link c-link--block c-link--icon-left">
+                          <span class="c-link__icon">
+                            <img src="./icon/tags.svg" alt="">
+                          </span>
+                          Tags
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="sidebar-navigation-link c-link c-link--block c-link--icon-left">
+                          <span class="c-link__icon">
+                            <img src="./icon/faq.svg" alt="">
+                          </span>
+                          FAQ
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://shop.forem.com" class="sidebar-navigation-link c-link c-link--block c-link--icon-left">
+                          <span class="c-link__icon">
+                            <img src="./icon/Shop.svg" alt="">
+                          </span>
+                          Forem Shop
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="sidebar-navigation-link c-link c-link--block c-link--icon-left">
+                          <span class="c-link__icon">
+                            <img src="./icon/Sponsors.svg" alt="">
+                          </span>
+                          Sponsors
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="sidebar-navigation-link c-link c-link--block c-link--icon-left">
+                          <span class="c-link__icon">
+                            <!--?xml version="1.0" encoding="UTF-8"?-->
+                            <img class="icon__size" src="./icon/dev.svg" alt="">
+                          </span>
+                          About
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="sidebar-navigation-link c-link c-link--block c-link--icon-left">
+                          <span class="c-link__icon">
+                            <img src="./icon/contac.svg" alt="">
+                          </span>
+                          Contact
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="sidebar-navigation-link c-link c-link--block c-link--icon-left">
+                          <span class="c-link__icon">
+                            <img class="icon__size" src="./icon/gides.svg" alt="">
+                          </span>
+                          Guides
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="sidebar-navigation-link c-link c-link--block c-link--icon-left">
+                          <span class="c-link__icon">
+                            <img class="icon__size" src="./icon/Software.svg" alt="">
+                          </span>
+                          Software comparisons
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+              
+                  <nav class="mb-4" data-testid="other-nav" aria-labelledby="other-nav-heading-hamburger">
+                    <h2 id="other-nav-heading-hamburger" class="crayons-subtitle-3 py-2 pl-3">
+                      Other
+                    </h2>
+                    <ul class="other-navigation-links sidebar-navigation-links spec-sidebar-navigation-links">
+                      <li>
+                        <a href="#" class="sidebar-navigation-link c-link c-link--block c-link--icon-left">
+                          <span class="c-link__icon">
+                            <img src="./icon/code.svg" alt="">
+                          </span>
+                          Code of Conduct
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="sidebar-navigation-link c-link c-link--block c-link--icon-left">
+                          <span class="c-link__icon">
+                            <img src="./icon/privacy.svg" alt="">
+                          </span>
+                          Privacy Policy
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="sidebar-navigation-link c-link c-link--block c-link--icon-left">
+                          <span class="c-link__icon">
+                            <img src="./icon/terms.svg" alt="">
+                          </span>
+                          Terms of use
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+              
+                  <div class="flex justify-end mb-4">
+                    <a href="https://twitter.com/thepracticaldev" target="_blank" class="c-link c-link--icon-alone c-link--block "
+                      rel="noopener me">
+                      <img src="./icon/tw.svg" alt="">
+              
+                    </a>
+                    <a href="https://facebook.com/thepracticaldev" target="_blank" class="c-link c-link--icon-alone c-link--block "
+                      rel="noopener me">
+                      <img src="./icon/fc.svg" alt="">
+                    </a>
+                    <a href="https://github.com/forem" target="_blank" class="c-link c-link--icon-alone c-link--block "
+                      rel="noopener me">
+                      <img src="./icon/gh.svg" alt="">
+                    </a>
+                    <a href="https://instagram.com/thepracticaldev" target="_blank" class="c-link c-link--icon-alone c-link--block "
+                      rel="noopener me">
+                      <img src="./icon/insta.svg" alt="">
+                    </a>
+                    <a href="https://twitch.com/thepracticaldev" target="_blank" class="c-link c-link--icon-alone c-link--block "
+                      rel="noopener me">
+                      <img src="./icon/twch.svg" alt="">
+                    </a>
+                    <a href="https://fosstodon.org/@thepracticaldev" target="_blank" class="c-link c-link--icon-alone c-link--block "
+                      rel="noopener me">
+                      <img src="./icon/mast.svg" alt="">
+                    </a>
+                  </div>
+            </div>
+          </div>
+        <a class="navbar-brand" href="#">
+          <img class="site-logo__img " style="width:50px;"
+            src="https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png"
+            alt="DEV Community">
+        </a>
+        <form class=" form__search  m-0 d-flex  border bg-transparent rounded" role="search">
+          <input class="form-control  bg-transparent border border-0 " type="search" placeholder="Search..."
+            aria-label="Search">
+          <button class="btn bg-transparent " type="submit"><img src="./icon/search.svg" alt=""></button>
+        </form>
+      </div>
+      <div class="container__rigth">
+        <button type="button" class="btn btn-outline button__post">Create Post</button>
+        <button type="button" class="btn border border-0"><img src="./icon/campana_notificacion.svg" alt=""></button>
+        <div class="btn-group">
+          <button type="button" class="btn border border-0 position-relative" width="45rem" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <img class="crayons-avatar__image rounded-circle border border-3" width="45rem" alt=""
+              id="nav-profile-image"
+              src="https://res.cloudinary.com/practicaldev/image/fetch/s--k4EIzUEO--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/1100923/99b9d110-72fe-48fd-83a9-33feb10660a9.png">
+            <ul class="dropdown-menu position-absolute position-absolute start-10 translate-middle-x">
+              <li><a class="dropdown-item" href="#"><span class="fw-bold">Emilio de León</span><br> @emilibers.com</a>
+              </li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Dashboard</a></li>
+              <li><a class="dropdown-item" href="#">Create Post</a></li>
+              <li><a class="dropdown-item" href="#">Reading list</a></li>
+              <li><a class="dropdown-item" href="#">Settings</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Sign Out</a></li>
+            </ul>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+<div class="container container_main">
+  <div class="container_nav_burger d-none  d-md-block">
+  <nav class="col-lg-3 col-md-3" data-testid="main-nav" aria-label="DEV Community">
+    <ul class="">
+      <li>
+        <a href="#" class="">
+          <span class="c-link__icon">
+            <img src="./icon/home_icon.svg" alt="">
+          </span>
+          Home
+        </a>
+      </li>
+      <li>
+        <a href="#" class="sidebar-navigation-link c-link c-link--block c-link--icon-left">
+          <span class="c-link__icon">
+            <img src="./icon/listing_icon.svg" alt="">
+          </span>
+          Listings
+        </a>
+      </li>
+      <li>
+        <a href="#" class="sidebar-navigation-link c-link c-link--block c-link--icon-left">
+          <span class="c-link__icon">
+            <img src="./icon/Podcasts.svg" alt="">
+          </span>
+          Podcasts
+        </a>
+      </li>
+      <li>
+        <a href="#" class="sidebar-navigation-link c-link c-link--block c-link--icon-left">
+          <span class="c-link__icon">
+            <img src="./icon/icon_videos.svg" alt="">
+          </span>
+          Videos
+        </a>
+      </li>
+      <li>
+        <a href="#" class="sidebar-navigation-link c-link c-link--block c-link--icon-left">
+          <span class="c-link__icon">
+            <img src="./icon/tags.svg" alt="">
+          </span>
+          Tags
+        </a>
+      </li>
+      <li>
+        <a href="#" class="sidebar-navigation-link c-link c-link--block c-link--icon-left">
+          <span class="c-link__icon">
+            <img src="./icon/faq.svg" alt="">
+          </span>
+          FAQ
+        </a>
+      </li>
+      <li>
+        <a href="https://shop.forem.com" class="sidebar-navigation-link c-link c-link--block c-link--icon-left">
+          <span class="c-link__icon">
+            <img src="./icon/Shop.svg" alt="">
+          </span>
+          Forem Shop
+        </a>
+      </li>
+      <li>
+        <a href="#" class="sidebar-navigation-link c-link c-link--block c-link--icon-left">
+          <span class="c-link__icon">
+            <img src="./icon/Sponsors.svg" alt="">
+          </span>
+          Sponsors
+        </a>
+      </li>
+      <li>
+        <a href="#" class="sidebar-navigation-link c-link c-link--block c-link--icon-left">
+          <span class="c-link__icon">
+            <!--?xml version="1.0" encoding="UTF-8"?-->
+            <img class="icon__size" src="./icon/dev.svg" alt="">
+          </span>
+          About
+        </a>
+      </li>
+      <li>
+        <a href="#" class="sidebar-navigation-link c-link c-link--block c-link--icon-left">
+          <span class="c-link__icon">
+            <img src="./icon/contac.svg" alt="">
+          </span>
+          Contact
+        </a>
+      </li>
+      <li>
+        <a href="#" class="sidebar-navigation-link c-link c-link--block c-link--icon-left">
+          <span class="c-link__icon">
+            <img class="icon__size" src="./icon/gides.svg" alt="">
+          </span>
+          Guides
+        </a>
+      </li>
+      <li>
+        <a href="#" class="sidebar-navigation-link c-link c-link--block c-link--icon-left">
+          <span class="c-link__icon">
+            <img class="icon__size" src="./icon/Software.svg" alt="">
+          </span>
+          Software comparisons
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <nav class="mb-4" data-testid="other-nav" aria-labelledby="other-nav-heading-hamburger">
+    <h2 id="other-nav-heading-hamburger" class="crayons-subtitle-3 py-2 pl-3">
+      Other
+    </h2>
+    <ul class="other-navigation-links sidebar-navigation-links spec-sidebar-navigation-links">
+      <li>
+        <a href="#" class="sidebar-navigation-link c-link c-link--block c-link--icon-left">
+          <span class="c-link__icon">
+            <img src="./icon/code.svg" alt="">
+          </span>
+          Code of Conduct
+        </a>
+      </li>
+      <li>
+        <a href="#" class="sidebar-navigation-link c-link c-link--block c-link--icon-left">
+          <span class="c-link__icon">
+            <img src="./icon/privacy.svg" alt="">
+          </span>
+          Privacy Policy
+        </a>
+      </li>
+      <li>
+        <a href="#" class="sidebar-navigation-link c-link c-link--block c-link--icon-left">
+          <span class="c-link__icon">
+            <img src="./icon/terms.svg" alt="">
+          </span>
+          Terms of use
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="flex justify-end mb-4">
+    <a href="https://twitter.com/thepracticaldev" target="_blank" class="c-link c-link--icon-alone c-link--block "
+      rel="noopener me">
+      <img src="./icon/tw.svg" alt="">
+
+    </a>
+    <a href="https://facebook.com/thepracticaldev" target="_blank" class="c-link c-link--icon-alone c-link--block "
+      rel="noopener me">
+      <img src="./icon/fc.svg" alt="">
+    </a>
+    <a href="https://github.com/forem" target="_blank" class="c-link c-link--icon-alone c-link--block "
+      rel="noopener me">
+      <img src="./icon/gh.svg" alt="">
+    </a>
+    <a href="https://instagram.com/thepracticaldev" target="_blank" class="c-link c-link--icon-alone c-link--block "
+      rel="noopener me">
+      <img src="./icon/insta.svg" alt="">
+    </a>
+    <a href="https://twitch.com/thepracticaldev" target="_blank" class="c-link c-link--icon-alone c-link--block "
+      rel="noopener me">
+      <img src="./icon/twch.svg" alt="">
+    </a>
+    <a href="https://fosstodon.org/@thepracticaldev" target="_blank" class="c-link c-link--icon-alone c-link--block "
+      rel="noopener me">
+      <img src="./icon/mast.svg" alt="">
+    </a>
+  </div>
+</div>
+</div>
+</div>
+
+  <!--Aside izquierda (Nefer) -->
+
+
+  <!--Aside de la derecha Kathy-->
+
+  <!--Main Christian-->
+
+
+  <!--Aside de la derecha Mich-->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+</body>
+<!--Footer Guadalupe-->
+<footer class="container-fluid text-center">
+  <div class="justify-center" id="footer-container" class="crayons-footer__container">
+    <p class="fs-s crayons-footer__description">
+      <a class="c-link c-link--branded fw-medium" aria-label="DEV Community Home" href="/">DEV Community</a> — A constructive and inclusive social network for software developers. With you every step of your journey.
+    </p>
+
+    <ul class="d-flex justify-content-center gap-4">
+        <li>
+    <a href="#">
+      Home
+    </a>
+    <span class="dot ml-2"></span>
+  </li>
+  <li>
+    <a href="#">
+      Listings
+    </a>
+    <span class="dot ml-2"></span>
+  </li>
+  <li ">
+    <a href="#">
+      Podcasts
+    </a>
+    <span class="#"></span>
+  </li>
+  <li >
+    <a href="#">
+      Videos
+    </a>
+    <span class="dot ml-2"></span>
+  </li>
+  <li>
+    <a href="#">
+      Tags
+    </a>
+    <span class="dot ml-2"></span>
+  </li>
+  <li>
+    <a href="#">
+      FAQ
+    </a>
+    <span class="dot ml-2"></span>
+  </li>
+  <li >
+    <a href="#">
+      Forem Shop
+    </a>
+    <span class="dot ml-2"></span>
+  </li>
+  <li>
+    <a href="#">
+      Sponsors
+    </a>
+    <span class="dot ml-2"></span>
+  </li>
+  <li >
+    <a href="#">
+      About
+    </a>
+    <span class="dot ml-2"></span>
+  </li>
+  <li >
+    <a href="#">
+      Contact
+    </a>
+    <span class="dot ml-2"></span>
+  </li>
+  <li >
+    <a href="#">
+      Guides
+    </a>
+    <span class="dot ml-2"></span>
+  </li>
+    </ul>
+    <li class="footer__nav">
+      <a href="#">
+        Software comparisons
+      </a>
+      <span class="dot ml-2"></span>
+    </li>
+    <ul class="d-flex justify-content-center gap-4">
+        <li class="footer__nav">
+    <a href="#">
+      Code of Conduct
+    </a>
+    <span class="dot ml-2"></span>
+  </li>
+  <li ">
+    <a href="#">
+      Privacy Policy
+    </a>
+    <span class="dot ml-2"></span>
+  </li>
+  <li>
+    <a href="#">
+      Terms of use
+    </a>
+    <span class="dot ml-2"></span>
+  </li>
+    </ul>
+
+    <div class="fs-s">
+      <p>Built on <a class="c-link c-link--branded" target="_blank" rel="noopener" href="https://www.forem.com">Forem</a> — the <a target="_blank" rel="noopener" class="c-link c-link--branded" href="https://dev.to/t/opensource">open source</a> software that powers <a target="_blank" rel="noopener" class="c-link c-link--branded" href="https://dev.to">DEV</a> and other inclusive communities.</p>
+      <p>Made with love and <a target="_blank" rel="noopener" class="c-link c-link--branded" href="https://dev.to/t/rails">Ruby on Rails</a>. DEV Community <span title="copyright">©</span> 2016 - 2023.</p>
+    </div>
+  </div>
+</footer>
+</html>
