@@ -4,6 +4,8 @@
 .post_socials {
   padding-left: 50px;
   height: 100%;
+  position: sticky;
+  top: 0;
 }
 
 .body_card {
