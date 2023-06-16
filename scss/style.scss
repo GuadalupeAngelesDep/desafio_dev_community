@@ -11,6 +11,7 @@ body {
 .button__post{
     border-color: $color_secundary_purple;
     color: $color_secundary_purple;
+    display: none;
 }
 
 .button__post:hover{
@@ -35,6 +36,17 @@ body {
     text-decoration: none;
     color: black;
 }
+.container_burger a {
+    text-decoration: none;
+    color: black;
+}
+.container_burger ul li{
+    list-style: none;
+    padding-inline-start: 0;
+}
+.container_burger ul{
+    padding-left: 0;
+}
 /*Aside izquierda (Nefer) */
 .tags__section {
     display: none;
@@ -42,7 +54,6 @@ body {
 
 /*Aside de la derecha Kathy*/
 .right {
-  width: 40%;
   border: 20px solid lightgray;
   background-color: white;
   border: 3px solid lightgray;
@@ -80,10 +91,10 @@ body {
       }
     
 /*Aside de la derecha Mich*/
- /*Aside de la derecha Mich*/ 
 .discuss_catercoller__section {
     display:flex;
     flex-direction:column;
+    background-color: #efefef;
     
 }
    
@@ -107,7 +118,7 @@ body {
     color: rgb(59, 73, 223, 1);
  }
 /*footer*/
-}
+
 
 
 
@@ -123,9 +134,7 @@ footer{
 
 
 /*Seccion  Tableta*/
-
 @media only screen and (min-width:768px) {
-
 
     
 
@@ -148,10 +157,16 @@ footer{
 
 
 
+/*footer*/
+
+
 
 @media only screen and (min-width:1024px) {
 
     /*Navbar */
+    .button__post{
+        display: inline;
+    }
     /*Aside izquierda (Nefer) */
 
 
@@ -160,4 +175,9 @@ footer{
     /*Main Christian*/
 
 
+    /*Aside de la derecha Mich*/
 
+
+
+    /*footer*/
+}
