@@ -1,29 +1,71 @@
+@import "./var.scss";
 /*Seccion MOBILE */
- /*Navbar */
+body {
+    background-color: #efefef;
+}
+
+/*Navbar */
+.form__search{
+    width: 20vw;
+}
+.button__post{
+    border-color: $color_secundary_purple;
+    color: $color_secundary_purple;
+}
+
+.button__post:hover{
+    background-color: $color_secundary_purple;
+    color: #efefef;
+}
+.icon__size {
+    height: 24px;
+    width: 24px;
+    vertical-align: middle;
+    display: inline-block;
+}
+.container_nav_burger ul li{
+    list-style: none;
+    padding-inline-start: 0;
+}
+.container_nav_burger ul{
+    padding-left: 0;
+}
+
+.container_nav_burger a{
+    text-decoration: none;
+    color: black;
+}
 /*Aside izquierda (Nefer) */
 .tags__section {
     display: none;
 }
 
-    /*Aside de la derecha Kathy*/
+/*Aside de la derecha Kathy*/
 
-    /*Main Christian*/
+/*Main Christian*/
 
-    
-    /*Aside de la derecha Mich*/
+
+/*Aside de la derecha Mich*/
 
 
 
 /*footer*/
-
+footer{
+    background-color: #bdbdbd;
+}
+.footer__nav{
+   list-style: none;
+}
 
 
 
 
 /*Seccion  Tableta*/
-@media only screen and (min-width:768px){
-     /*Navbar */
-/*Aside izquierda (Nefer) */
+@media only screen and (min-width:768px) {
+
+    
+
+    /*Aside izquierda (Nefer) */
 
 .tags__section {
     display: block;
@@ -36,26 +78,33 @@
 
     /*Main Christian*/
 
-    
+
     /*Aside de la derecha Mich*/
+
 
 
 
 /*footer*/
 
 @media only screen and (min-width:1024px){
+
+    /*footer*/
+}
+
+@media only screen and (min-width:1024px) {
+
     /*Navbar */
-/*Aside izquierda (Nefer) */
+    /*Aside izquierda (Nefer) */
 
 
-   /*Aside de la derecha Kathy*/
+    /*Aside de la derecha Kathy*/
 
-   /*Main Christian*/
-
-   
-   /*Aside de la derecha Mich*/
+    /*Main Christian*/
 
 
+    /*Aside de la derecha Mich*/
 
-/*footer*/
+
+
+    /*footer*/
 }
