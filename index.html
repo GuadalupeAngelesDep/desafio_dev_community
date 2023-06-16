@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./scss/style.css">
 </head>
+
 <body>
   <!--Navbar -->
-  <nav class="navbar bg-body-tertiary h-50">
+  <nav class="navbar container-fluid bg-body-tertiary h-50">
     <div class="container">
       <div class="container__left d-flex align-items-center">
         <button class="button__burger h-25 border border-0 bg-transparent d-lg-none d-md-none d-sm-block "
           data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
           <img src="./icon/burger.svg" alt=""></button>
-        <div class="offcanvas offcanvas-start d-sm-block" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+        <div class="offcanvas offcanvas-start d-sm-block container_burger" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
           id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
           <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Dev Community</h5>
@@ -227,9 +229,10 @@
       </div>
     </div>
   </nav>
-  <div class="container container_main">
-    <div class="container_nav_burger d-none  d-md-block">
-      <nav class="col-lg-3 col-md-3" data-testid="main-nav" aria-label="DEV Community">
+
+  <div class="container d-flex container_main">
+    <div class="container_nav_burger d-none  d-md-block col-2">
+      <nav class="" data-testid="main-nav" aria-label="DEV Community">
         <ul class="">
           <li>
             <a href="#" class="">
@@ -390,436 +393,476 @@
           <img src="./icon/mast.svg" alt="">
         </a>
       </div>
-    </div>
-  </div>
-</div>
 
-  <!--Aside izquierda (Nefer) -->
-  <aside class="container d-none d-md-block">
-    <section class="popular__tags  w-25 h-25 rounded">
-      <nav class="mb-6 " aria-label="Secondary sidebar nav">
 
-        <div class="Title__tags_# d-flex justify-content-between">
-          <h5 class="crayons-subtitle-3">Popular Tags</h5>
-          <a id="tag-priority-link" href="/dashboard/following_tags" class="c-link c-link--block c-link--icon-alone"
-            aria-label="Customize tag priority" title="Customize tag priority">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img"
-              class="crayons-icon">
-              <path
-                d="M12 1l9.5 5.5v11L12 23l-9.5-5.5v-11L12 1zm0 2.311L4.5 7.653v8.694l7.5 4.342 7.5-4.342V7.653L12 3.311zM12 16a4 4 0 110-8 4 4 0 010 8zm0-2a2 2 0 100-4 2 2 0 000 4z">
-              </path>
-            </svg>
-          </a>
-        </div>
 
-        <div id="sidebar-nav-default-tags" class="overflow-y-auto" style="max-height: 42vh">
-          <div class="sidebar-nav-element my-3" id="default-sidebar-element-webdev">
-            <a class="c-link c-link--block link-underline link-underline-opacity-0 text-dark " href="/t/webdev">
-              #webdev
-            </a>
-          </div>
-          <div class="sidebar-nav-element my-3" id="default-sidebar-element-javascript">
-            <a class="c-link c-link--block link-underline link-underline-opacity-0 text-dark " href="/t/javascript">
-              #javascript
-            </a>
-          </div>
-          <div class="sidebar-nav-element my-3" id="default-sidebar-element-beginners">
-            <a class="c-link c-link--block link-underline link-underline-opacity-0 text-dark " href="/t/beginners">
-              #beginners
-            </a>
-          </div>
-          <div class="sidebar-nav-element my-3" id="default-sidebar-element-programming">
-            <a class="c-link c-link--block link-underline link-underline-opacity-0 text-dark " href="/t/programming">
-              #programming
-            </a>
-          </div>
-          <div class="sidebar-nav-element my-3" id="default-sidebar-element-tutorial">
-            <a class="c-link c-link--block link-underline link-underline-opacity-0 text-dark " href="/t/tutorial">
-              #tutorial
-            </a>
-          </div>
-          <div class="sidebar-nav-element my-3" id="default-sidebar-element-react">
-            <a class="c-link c-link--block link-underline link-underline-opacity-0 text-dark " href="/t/react">
-              #react
-            </a>
-          </div>
-          <div class="sidebar-nav-element my-3" id="default-sidebar-element-python">
-            <a class="c-link c-link--block link-underline link-underline-opacity-0 text-dark " href="/t/python">
-              #python
-            </a>
-          </div>
-          <div class="sidebar-nav-element my-3" id="default-sidebar-element-devops">
-            <a class="c-link c-link--block link-underline link-underline-opacity-0 text-dark " href="/t/devops">
-              #devops
-            </a>
-          </div>
-          <div class="sidebar-nav-element my-3" id="default-sidebar-element-discuss">
-            <a class="c-link c-link--block link-underline link-underline-opacity-0 text-dark " href="/t/discuss">
-              #discuss
-            </a>
-          </div>
-          <div class="sidebar-nav-element my-3" id="default-sidebar-element-productivity">
-            <a class="c-link c-link--block link-underline link-underline-opacity-0 text-dark " href="/t/productivity">
-              #productivity
-            </a>
-          </div>
-        </div>
-      </nav>
-    </section>
+      <!--Aside izquierda (Nefer) -->
+      <aside class="container d-none d-md-block">
+        <section class="popular__tags  rounded">
+          <nav class="mb-6 " aria-label="Secondary sidebar nav">
 
-    <section class="dev__community bg-white  p-2 w-25 h-25 rounded">
-      <div class="crayons-card crayons-card--secondary crayons-sponsorship billboard" data-display-unit="" data-id="672"
-        data-category-click="click" data-category-impression="impression" data-context-type="home"
-        data-type-of="in_house" data-impression-recorded="true" data-click-recorded="true">
-        <div class="crayons-sponsorship__header relative">
+            <div class="Title__tags_# d-flex justify-content-between">
+              <h5 class="crayons-subtitle-3">Popular Tags</h5>
+              <a id="tag-priority-link" href="/dashboard/following_tags" class="c-link c-link--block c-link--icon-alone"
+                aria-label="Customize tag priority" title="Customize tag priority">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img"
+                  class="crayons-icon">
+                  <path
+                    d="M12 1l9.5 5.5v11L12 23l-9.5-5.5v-11L12 1zm0 2.311L4.5 7.653v8.694l7.5 4.342 7.5-4.342V7.653L12 3.311zM12 16a4 4 0 110-8 4 4 0 010 8zm0-2a2 2 0 100-4 2 2 0 000 4z">
+                  </path>
+                </svg>
+              </a>
+            </div>
 
-          <div class="box__dev d-flex justify-content-between">
-            <div class="crayons-sponsorship__title text-secondary">DEV Community</div>
-            <button class="Button border-0 rounded bg-transparent" id="sponsorship-dropdown-trigger-672"
-              aria-controls="sponsorship-dropdown-672" aria-expanded="false" aria-haspopup="true"
-              class="dropBtn crayons-sponsorship__dropdown crayons-btn crayons-btn--s crayons-btn--ghost crayons-btn--icon"
-              aria-label="Toggle dropdown menu" data-initialized="true">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img"
-                aria-labelledby="a77wvm20ujd7789ojyuwge1cb8t17qvg" class="crayons-icon pointer-events-none">
-                <title id="a77wvm20ujd7789ojyuwge1cb8t17qvg">Dropdown menu</title>
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M8.25 12a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm5.25 0a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm3.75 1.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z">
-                </path>
-              </svg>
-            </button>
+            <div id="sidebar-nav-default-tags" class="overflow-y-auto" style="max-height: 42vh">
+              <div class="sidebar-nav-element my-3" id="default-sidebar-element-webdev">
+                <a class="c-link c-link--block link-underline link-underline-opacity-0 text-dark " href="/t/webdev">
+                  #webdev
+                </a>
+              </div>
+              <div class="sidebar-nav-element my-3" id="default-sidebar-element-javascript">
+                <a class="c-link c-link--block link-underline link-underline-opacity-0 text-dark " href="/t/javascript">
+                  #javascript
+                </a>
+              </div>
+              <div class="sidebar-nav-element my-3" id="default-sidebar-element-beginners">
+                <a class="c-link c-link--block link-underline link-underline-opacity-0 text-dark " href="/t/beginners">
+                  #beginners
+                </a>
+              </div>
+              <div class="sidebar-nav-element my-3" id="default-sidebar-element-programming">
+                <a class="c-link c-link--block link-underline link-underline-opacity-0 text-dark "
+                  href="/t/programming">
+                  #programming
+                </a>
+              </div>
+              <div class="sidebar-nav-element my-3" id="default-sidebar-element-tutorial">
+                <a class="c-link c-link--block link-underline link-underline-opacity-0 text-dark " href="/t/tutorial">
+                  #tutorial
+                </a>
+              </div>
+              <div class="sidebar-nav-element my-3" id="default-sidebar-element-react">
+                <a class="c-link c-link--block link-underline link-underline-opacity-0 text-dark " href="/t/react">
+                  #react
+                </a>
+              </div>
+              <div class="sidebar-nav-element my-3" id="default-sidebar-element-python">
+                <a class="c-link c-link--block link-underline link-underline-opacity-0 text-dark " href="/t/python">
+                  #python
+                </a>
+              </div>
+              <div class="sidebar-nav-element my-3" id="default-sidebar-element-devops">
+                <a class="c-link c-link--block link-underline link-underline-opacity-0 text-dark " href="/t/devops">
+                  #devops
+                </a>
+              </div>
+              <div class="sidebar-nav-element my-3" id="default-sidebar-element-discuss">
+                <a class="c-link c-link--block link-underline link-underline-opacity-0 text-dark " href="/t/discuss">
+                  #discuss
+                </a>
+              </div>
+              <div class="sidebar-nav-element my-3" id="default-sidebar-element-productivity">
+                <a class="c-link c-link--block link-underline link-underline-opacity-0 text-dark "
+                  href="/t/productivity">
+                  #productivity
+                </a>
+              </div>
+            </div>
+          </nav>
+        </section>
 
-          </div>
-        </div>
-      </div>
+        <section class="dev__community bg-white  p-2  rounded">
+          <div class="crayons-card crayons-card--secondary crayons-sponsorship billboard" data-display-unit=""
+            data-id="672" data-category-click="click" data-category-impression="impression" data-context-type="home"
+            data-type-of="in_house" data-impression-recorded="true" data-click-recorded="true">
+            <div class="crayons-sponsorship__header relative">
 
-      <div class="p-1 pt-3 text-styles text-styles--display-ad ">
-        <h5> <a href="#the-legend-of-the-lonely-coder" class="anchor"> </a> The Legend of the Lonely Coder...</h5>
-        <h5> <a href="#debunked" class="anchor"> </a> Debunked</h5>
-        <p><a href="https://dev.to/enter?state=new-user">Join Over 1 Million Developers on DEV</a></p>
-      </div>
-      </div>
+              <div class="box__dev d-flex justify-content-between">
+                <div class="crayons-sponsorship__title text-secondary">DEV Community</div>
+                <button class="Button border-0 rounded bg-transparent" id="sponsorship-dropdown-trigger-672"
+                  aria-controls="sponsorship-dropdown-672" aria-expanded="false" aria-haspopup="true"
+                  class="dropBtn crayons-sponsorship__dropdown crayons-btn crayons-btn--s crayons-btn--ghost crayons-btn--icon"
+                  aria-label="Toggle dropdown menu" data-initialized="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img"
+                    aria-labelledby="a77wvm20ujd7789ojyuwge1cb8t17qvg" class="crayons-icon pointer-events-none">
+                    <title id="a77wvm20ujd7789ojyuwge1cb8t17qvg">Dropdown menu</title>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M8.25 12a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm5.25 0a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm3.75 1.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z">
+                    </path>
+                  </svg>
+                </button>
 
-    </section>
-
-    <section class="dev__community-2 bg-white mt-3 mb-3 p-2 w-25 h-25 rounded">
-      <div class="crayons-card crayons-card--secondary crayons-sponsorship billboard" data-display-unit="" data-id="680"
-        data-category-click="click" data-category-impression="impression" data-context-type="home"
-        data-type-of="in_house" data-impression-recorded="true">
-        <div class="crayons-sponsorship__header relative">
-
-          <div class="box__dev-2 d-flex justify-content-between">
-            <div class="crayons-sponsorship__title text-secondary">DEV Community</div>
-            <button class="Button border-0 rounded bg-transparent " id="sponsorship-dropdown-trigger-680"
-              aria-controls="sponsorship-dropdown-680" aria-expanded="false" aria-haspopup="true"
-              class="dropBtn crayons-sponsorship__dropdown crayons-btn crayons-btn--s crayons-btn--ghost crayons-btn--icon"
-              aria-label="Toggle dropdown menu" data-initialized="true">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img"
-                aria-labelledby="asvj2hjgrruzi9as4q7enmo5t6v9ogi" class="crayons-icon pointer-events-none">
-                <title id="asvj2hjgrruzi9as4q7enmo5t6v9ogi">Dropdown menu</title>
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M8.25 12a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm5.25 0a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm3.75 1.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z">
-                </path>
-              </svg>
-            </button>
+              </div>
+            </div>
           </div>
 
           <div class="p-1 pt-3 text-styles text-styles--display-ad ">
-            <img class="animal__imagen w-100"
-              src="https://res.cloudinary.com/practicaldev/image/fetch/s--LqgADxKo--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_350/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/jb3sc2966d2rvbcohxvq.png"
-              alt="Image description">
-            <a href="https://dev.to/enter?state=new-user">Create An Account on DEV</a>
+            <h5> <a href="#the-legend-of-the-lonely-coder" class="anchor"> </a> The Legend of the Lonely Coder...</h5>
+            <h5> <a href="#debunked" class="anchor"> </a> Debunked</h5>
+            <p><a href="https://dev.to/enter?state=new-user">Join Over 1 Million Developers on DEV</a></p>
           </div>
-        </div>
-      </div>
-    </section>
-
-  </aside>
 
 
+        </section>
 
-  <!--Main Christian-->
- <main class="d-flex flex-column gap-3 col-md-9 col-ls-6 cards__general">
-    <!--First Cards-->
-    <ul class="nav fs-5">
-      <li class="nav-item">
-        <a class="nav-link active link-dark fw-bold" aria-current="page" href="#">Relevant</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link link-dark" href="#">Latest</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link link-dark" href="#">Top</a>
-      </li>
-    </ul>
-    <section class="container__One ">
-      <div class="container-fluid">
-        <div class="card">
-          <img src="./DevTo Images/DevTo Main-image.webp" class="" alt="...">
-          <div class="card-body">
-            <div class="container__imgtext d-flex gap-2">
-              <img class="container__imgUser rounded-cirle" src="./DevTo Images/profile pic cards 1.webp" alt="">
-              <p class="container__imgtext--name aria-label "> Sloan the DEV Moderator <br> Jun 14 (1Day Ago)</p>
+        <section class="dev__community-2 bg-white mt-3 mb-3 p-2  rounded">
+          <div class="crayons-card crayons-card--secondary crayons-sponsorship billboard" data-display-unit=""
+            data-id="680" data-category-click="click" data-category-impression="impression" data-context-type="home"
+            data-type-of="in_house" data-impression-recorded="true">
+            <div class="crayons-sponsorship__header relative">
+
+              <div class="box__dev-2 d-flex justify-content-between">
+                <div class="crayons-sponsorship__title text-secondary">DEV Community</div>
+                <button class="Button border-0 rounded bg-transparent " id="sponsorship-dropdown-trigger-680"
+                  aria-controls="sponsorship-dropdown-680" aria-expanded="false" aria-haspopup="true"
+                  class="dropBtn crayons-sponsorship__dropdown crayons-btn crayons-btn--s crayons-btn--ghost crayons-btn--icon"
+                  aria-label="Toggle dropdown menu" data-initialized="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img"
+                    aria-labelledby="asvj2hjgrruzi9as4q7enmo5t6v9ogi" class="crayons-icon pointer-events-none">
+                    <title id="asvj2hjgrruzi9as4q7enmo5t6v9ogi">Dropdown menu</title>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M8.25 12a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm5.25 0a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm3.75 1.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z">
+                    </path>
+                  </svg>
+                </button>
+              </div>
+
+              <div class="p-1 pt-3 text-styles text-styles--display-ad ">
+                <img class="animal__imagen w-100"
+                  src="https://res.cloudinary.com/practicaldev/image/fetch/s--LqgADxKo--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_350/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/jb3sc2966d2rvbcohxvq.png"
+                  alt="Image description">
+                <a href="https://dev.to/enter?state=new-user">Create An Account on DEV</a>
+              </div>
             </div>
-            <div class="conteiner__tow col-12 ms-4 mt-0">
-              <h1 class="container__two--title ">
-                <a href="./seccion_post.html" class="container__titleSmall fs-2 link-primary text-dark fw-bold link-underline-opacity-0">Surviving Cancer, Building Code, Thriving in Tech”: CodeNewbie
-                  Podcast S24E7 </a>
-              </h1>
-              <a class="container__crayons-tag" href="/t/javascript"><span
-                  class="crayons-tag__prefix">#</span>hackathon</a>
-              <a class="container__crayons-tag" href="/t/Begginers"><span class="crayons-tag__prefix">#</span>webdev</a>
-              <a class="container__crayons-tag" href="/t/api"><span class="crayons-tag__prefix">#</span>programming</a>
-              <a class="container__crayons-tag" href="/t/webdev"><span class="crayons-tag__prefix">#</span>react</a>
-            </div>
-            <div class="d-flex col-lg-12 justify-content-between container__Three">
-                  <div class="d-flex ms-4 mt-2">
-                    <div>
-                      <img src="./DevTo Images/heart symbol.svg" alt="">
-                      <img src="https://dev.to/assets/fire-f60e7a582391810302117f987b22a8ef04a2fe0df7e3258a5f49332df1cec71e.svg" width="18" height="18" alt="Fire">
-                       <span>1737 Reactions</span>
-                    </div>
-                    <div>
-                      <img src="./icon/coment.svg" alt="">
-                      <span>57 Comments</span>
-                    </div>
+          </div>
+        </section>
+
+      </aside>
+    </div>
+
+    <!--Main Christian-->
+    <main class="d-flex flex-column gap-3 col-md-9 col-ls-6 cards__general">
+      <!--First Cards-->
+      <ul class="nav fs-5">
+        <li class="nav-item">
+          <a class="nav-link active link-dark fw-bold" aria-current="page" href="#">Relevant</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-dark" href="#">Latest</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-dark" href="#">Top</a>
+        </li>
+      </ul>
+      <section class="container__One ">
+        <div class="container-fluid">
+          <div class="card">
+            <img src="./DevTo Images/DevTo Main-image.webp" class="" alt="...">
+            <div class="card-body">
+              <div class="container__imgtext d-flex gap-2">
+                <img class="container__imgUser rounded-cirle" src="./DevTo Images/profile pic cards 1.webp" alt="">
+                <p class="container__imgtext--name aria-label "> Sloan the DEV Moderator <br> Jun 14 (1Day Ago)</p>
+              </div>
+              <div class="conteiner__tow col-12 ms-4 mt-0">
+                <h1 class="container__two--title ">
+                  <a href="./seccion_post.html"
+                    class="container__titleSmall fs-2 link-primary text-dark fw-bold link-underline-opacity-0">Surviving
+                    Cancer, Building Code, Thriving in Tech”: CodeNewbie
+                    Podcast S24E7 </a>
+                </h1>
+                <a class="container__crayons-tag" href="/t/javascript"><span
+                    class="crayons-tag__prefix">#</span>hackathon</a>
+                <a class="container__crayons-tag" href="/t/Begginers"><span
+                    class="crayons-tag__prefix">#</span>webdev</a>
+                <a class="container__crayons-tag" href="/t/api"><span
+                    class="crayons-tag__prefix">#</span>programming</a>
+                <a class="container__crayons-tag" href="/t/webdev"><span class="crayons-tag__prefix">#</span>react</a>
+              </div>
+              <div class="d-flex col-lg-12 justify-content-between container__Three">
+                <div class="d-flex ms-4 mt-2">
+                  <div>
+                    <img src="./DevTo Images/heart symbol.svg" alt="">
+                    <img
+                      src="https://dev.to/assets/fire-f60e7a582391810302117f987b22a8ef04a2fe0df7e3258a5f49332df1cec71e.svg"
+                      width="18" height="18" alt="Fire">
+                    <span>1737 Reactions</span>
                   </div>
+                  <div>
+                    <img src="./icon/coment.svg" alt="">
+                    <span>57 Comments</span>
+                  </div>
+                </div>
                 <div class="">
                   <span>4 min read</span>
-                  <button type="button" class="btn border border-0 " disabled> <img src="./icon/mark.svg" style="width:20px;"></button>
+                  <button type="button" class="btn border border-0 " disabled> <img src="./icon/mark.svg"
+                      style="width:20px;"></button>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!--SecondCard-->
-    <section class="container__One">
-      <div class="container-fluid">
-        <div class="card">
-          <div class="card-body">
-            <div class="container__imgtext d-flex gap-2">
-              <img class="container__imgUser rounded-circle" src="./DevTo Images/profile pic cards 2.webp" alt="">
-              <p class="container__imgtext--name aria-label "> Necati Ozmen for refine <br> Jun 14 (1Day Ago)</p>
-            </div>
-            <div class="conteiner__tow col-12 ms-4">
-              <h1 class="container__two--title ">
-                <a class="container__titleSmall fs-2 link-primary text-dark fw-bold link-underline-opacity-0">refine + DEV Open Source Hackathon 2 - Pre- Announcement </a>
-              </h1>
-              <a class="container__crayons-tag" href="/t/javascript"><span
-                  class="crayons-tag__prefix">#</span>hackathon</a>
-              <a class="container__crayons-tag" href="/t/Begginers"><span class="crayons-tag__prefix">#</span>webdev</a>
-              <a class="container__crayons-tag" href="/t/api"><span class="crayons-tag__prefix">#</span>programming</a>
-              <a class="container__crayons-tag" href="/t/webdev"><span class="crayons-tag__prefix">#</span>react</a>
-            </div>
-            <div class="d-flex col-lg-12 justify-content-between container__Three">
-                  <div class="d-flex ms-4 mt-2">
-                    <div>
-                      <img src="./DevTo Images/heart symbol.svg" alt="">
-                      <img src="https://dev.to/assets/multi-unicorn-b44d6f8c23cdd00964192bedc38af3e82463978aa611b4365bd33a0f1f4f3e97.svg" width="18" height="18" alt="Unicorn">
-                      <img src="https://dev.to/assets/raised-hands-74b2099fd66a39f2d7eed9305ee0f4553df0eb7b4f11b01b6b1b499973048fe5.svg" width="18" height="18" alt="Raised Hands">
-                       <span>1737 Reactions</span>
-                    </div>
-                    <div>
-                      <img src="./icon/coment.svg" alt="">
-                      <span>57 Comments</span>
-                    </div>
+      </section>
+      <!--SecondCard-->
+      <section class="container__One">
+        <div class="container-fluid">
+          <div class="card">
+            <div class="card-body">
+              <div class="container__imgtext d-flex gap-2">
+                <img class="container__imgUser rounded-circle" src="./DevTo Images/profile pic cards 2.webp" alt="">
+                <p class="container__imgtext--name aria-label "> Necati Ozmen for refine <br> Jun 14 (1Day Ago)</p>
+              </div>
+              <div class="conteiner__tow col-12 ms-4">
+                <h1 class="container__two--title ">
+                  <a class="container__titleSmall fs-2 link-primary text-dark fw-bold link-underline-opacity-0">refine +
+                    DEV Open Source Hackathon 2 - Pre- Announcement </a>
+                </h1>
+                <a class="container__crayons-tag" href="/t/javascript"><span
+                    class="crayons-tag__prefix">#</span>hackathon</a>
+                <a class="container__crayons-tag" href="/t/Begginers"><span
+                    class="crayons-tag__prefix">#</span>webdev</a>
+                <a class="container__crayons-tag" href="/t/api"><span
+                    class="crayons-tag__prefix">#</span>programming</a>
+                <a class="container__crayons-tag" href="/t/webdev"><span class="crayons-tag__prefix">#</span>react</a>
+              </div>
+              <div class="d-flex col-lg-12 justify-content-between container__Three">
+                <div class="d-flex ms-4 mt-2">
+                  <div>
+                    <img src="./DevTo Images/heart symbol.svg" alt="">
+                    <img
+                      src="https://dev.to/assets/multi-unicorn-b44d6f8c23cdd00964192bedc38af3e82463978aa611b4365bd33a0f1f4f3e97.svg"
+                      width="18" height="18" alt="Unicorn">
+                    <img
+                      src="https://dev.to/assets/raised-hands-74b2099fd66a39f2d7eed9305ee0f4553df0eb7b4f11b01b6b1b499973048fe5.svg"
+                      width="18" height="18" alt="Raised Hands">
+                    <span>1737 Reactions</span>
                   </div>
+                  <div>
+                    <img src="./icon/coment.svg" alt="">
+                    <span>57 Comments</span>
+                  </div>
+                </div>
                 <div class="">
                   <span>4 min read</span>
-                  <button type="button" class="btn border border-0 " disabled> <img src="./icon/mark.svg" style="width:20px;"></button>
+                  <button type="button" class="btn border border-0 " disabled> <img src="./icon/mark.svg"
+                      style="width:20px;"></button>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!--Three Card-->
-    <section class="container__One">
-      <div class="container-fluid">
-        <div class="card ">
-          <img src="" class="" alt="">
-          <div class="card-body">
-            <div class="container__imgtext d-flex gap-2">
-              <img class="container__imgUser rounded-circle" src="./DevTo Images/profile pic cards 3.webp" alt="">
-              <p class="container__imgtext--name aria-label "> Faris Durrani <br> Jun 14 (17 hours ago)</p>
+      </section>
+      <!--Three Card-->
+      <section class="container__One">
+        <div class="container-fluid">
+          <div class="card ">
+            <img src="" class="" alt="">
+            <div class="card-body">
+              <div class="container__imgtext d-flex gap-2">
+                <img class="container__imgUser rounded-circle" src="./DevTo Images/profile pic cards 3.webp" alt="">
+                <p class="container__imgtext--name aria-label "> Faris Durrani <br> Jun 14 (17 hours ago)</p>
+              </div>
+              <div class="conteiner__tow col-12 ms-4">
+                <h1 class="container__two--title ">
+                  <a class="container__titleSmall fs-2 link-primary text-dark fw-bold link-underline-opacity-0 "> An
+                    Introduction to OCI CLI</a>
+                </h1>
+                <a class="container__crayons-tag" href="/t/Begginers"><span
+                    class="crayons-tag__prefix">#</span>oracle</a>
+                <a class="container__crayons-tag" href="/t/Programming
+                span class=" crayons-tag__prefix">#</span>cloud</a>
+                <a class="container__crayons-tag" href="/t/wrigting">
+                  <span class="crayons-tag__prefix">#</span>devops</a>
+              </div>
             </div>
-            <div class="conteiner__tow col-12 ms-4">
-              <h1 class="container__two--title ">
-                <a class="container__titleSmall fs-2 link-primary text-dark fw-bold link-underline-opacity-0 "> An Introduction to OCI CLI</a>
-              </h1>
-              <a class="container__crayons-tag" href="/t/Begginers"><span class="crayons-tag__prefix">#</span>oracle</a>
-              <a class="container__crayons-tag" href="/t/Programming
-                  span class=" crayons-tag__prefix">#</span>cloud</a>
-              <a class="container__crayons-tag" href="/t/wrigting">
-                <span class="crayons-tag__prefix">#</span>devops</a>
+            <div class="d-flex col-lg-12 justify-content-between container__Three">
+              <div class="d-flex ms-4 mt-2">
+                <div>
+                  <img src="./DevTo Images/heart symbol.svg" alt=""> <span>1000 Reactions</span>
+                </div>
+                <div>
+                  <img src="./icon/coment.svg" alt="">
+                  <span>3 Comments</span>
+                </div>
+              </div>
+              <div class="">
+                <span>7 min read</span>
+                <button type="button" class="btn border border-0 " disabled> <img src="./icon/mark.svg"
+                    style="width:20px;"></button>
+              </div>
             </div>
           </div>
-          <div class="d-flex col-lg-12 justify-content-between container__Three">
-            <div class="d-flex ms-4 mt-2">
-              <div>
-                <img src="./DevTo Images/heart symbol.svg" alt=""> <span>1000 Reactions</span>
+      </section>
+      <!--Four Card-->
+      <section class="container__One">
+        <div class="container-fluid">
+          <div class="card">
+            <img src="" class="" alt="">
+            <div class="card-body ">
+              <div class="container__imgtext d-flex gap-2">
+                <img class="container__imgUser rounded-circle" src="./DevTo Images/profile pic cards 4.webp" alt="">
+                <p class="container__imgtext--name aria-label "> Ran Cohen<br> Jun 14 (17 hours ago)</p>
               </div>
-              <div>
-                <img src="./icon/coment.svg" alt="">
-                <span>3 Comments</span>
+              <div class="conteiner__tow ms-4 col-12">
+                <h1 class="container__two--title ">
+                  <a class="container__titleSmall fs-2 link-primary text-dark fw-bold link-underline-opacity-0">Configuration-as-code:
+                    Automating Application Configuration</a>
+                </h1>
+                <a class="container__crayons-tag" href="#">#devops</a>
+                <a class="container__crayons-tag" href="#">#programming</a>
+                <a class="container__crayons-tag" href="#">#opensource</a>
               </div>
             </div>
-          <div class="">
-            <span>7 min read</span>
-            <button type="button" class="btn border border-0 " disabled> <img src="./icon/mark.svg" style="width:20px;"></button>
-        </div>
-      </div>
-        </div>
-    </section>
-    <!--Four Card-->
-    <section class="container__One">
-      <div class="container-fluid">
-        <div class="card">
-          <img src="" class="" alt="">
-          <div class="card-body ">
-            <div class="container__imgtext d-flex gap-2">
-              <img class="container__imgUser rounded-circle" src="./DevTo Images/profile pic cards 4.webp" alt="">
-              <p class="container__imgtext--name aria-label "> Ran Cohen<br> Jun 14 (17 hours ago)</p>
-            </div>
-            <div class="conteiner__tow ms-4 col-12">
-              <h1 class="container__two--title ">
-                <a class="container__titleSmall fs-2 link-primary text-dark fw-bold link-underline-opacity-0">Configuration-as-code: Automating Application Configuration</a>
-              </h1>
-              <a class="container__crayons-tag" href="#">#devops</a>
-              <a class="container__crayons-tag" href="#">#programming</a>
-              <a class="container__crayons-tag" href="#">#opensource</a>
+            <div class="d-flex col-lg-12 justify-content-between container__Three">
+              <div class="d-flex ms-4 mt-2">
+                <div>
+                  <img src="./DevTo Images/heart symbol.svg" alt="">
+                  <img
+                    src="https://dev.to/assets/multi-unicorn-b44d6f8c23cdd00964192bedc38af3e82463978aa611b4365bd33a0f1f4f3e97.svg"
+                    width="18" height="18" alt="Unicorn">
+                  <span>1032 Reactions</span>
+                </div>
+                <div>
+                  <img src="./icon/coment.svg" alt="">
+                  <span>250 Comments</span>
+                </div>
+              </div>
+              <div class="">
+                <span>8 min read</span>
+                <button type="button" class="btn border border-0 " disabled> <img src="./icon/mark.svg"
+                    style="width:20px;"></button>
+              </div>
             </div>
           </div>
-          <div class="d-flex col-lg-12 justify-content-between container__Three">
-            <div class="d-flex ms-4 mt-2">
-              <div>
-                <img src="./DevTo Images/heart symbol.svg" alt="">
-                <img src="https://dev.to/assets/multi-unicorn-b44d6f8c23cdd00964192bedc38af3e82463978aa611b4365bd33a0f1f4f3e97.svg" width="18" height="18" alt="Unicorn">
-                 <span>1032 Reactions</span>
-              </div>
-              <div>
-                <img src="./icon/coment.svg" alt="">
-                <span>250 Comments</span>
-              </div>
-            </div>
-          <div class="">
-            <span>8 min read</span>
-            <button type="button" class="btn border border-0 " disabled> <img src="./icon/mark.svg" style="width:20px;"></button>
-        </div>
-      </div>
-        </div>
-    </section>
+      </section>
     </main>
-  <!--Aside de la derecha Kathy-->
-  <div class="right">
-        <div class="header">
-          <h2>Listings</h2>
-          <h4 class="seeAll">See all</h4>
-        </div>
-        <div class="each">
-          <p>
-            Experienced technical writer seeking opportunities inAI, ML, and
-            Data Science
+<div class="container col-3 d-none d-lg-block">
+    <div class="right ">
+      <div class="header">
+        <h2>Listings</h2>
+        <h4 class="seeAll">See all</h4>
+      </div>
+      <div class="each">
+        <p>
+          Experienced technical writer seeking opportunities inAI, ML, and
+          Data Science
+        </p>
+        <p class="sub">forhire</p>
+      </div>
+      <div class="each">
+        <p>
+          I am available to for 1:1 Mentoring, Mock interviews, career
+          guidance.
+        </p>
+        <p class="sub">mentors</p>
+      </div>
+      <div class="each">
+        <p>
+          30+ Ultimate Chrome extensions handbook: Supercharge your browsing
+          experience
+        </p>
+        <p class="sub">collabs</p>
+      </div>
+      <div class="each">
+        <p>
+          Improve your HTML and CSS skills by practicing on real design
+          templates.
+        </p>
+        <p class="sub">products</p>
+      </div>
+      <div class="each">
+        <p>Playright Test Automation Mentorship</p>
+        <p class="sub">mentors</p>
+      </div>
+      <div class="each">
+        <p class="fw-bold text-center">Create a Listing</p>
+      </div>
+    </div>
+    <div class="right ">
+      <div class="header">
+        <header class="discuss__header p-3">
+          <h3>#discuss</h3>
+        </header>
+      </div>
+      <div class="each border border-top border-light-subtle p-2 border-opacity-5">
+        <p class="discuss__link">
+          🌟 AI TOOLS TO GENERATE YOUR NEXT BUSINESS IDEA WORTH $100K 🌟
+        <div class="discuss__img"><img class="new__img"
+            src="/imagenes/Captura de pantalla 2023-06-15 a la(s) 1.34.16.png" alt="New"></div>
+        </p>
+      </div>
+      <div class="each border-top border-light-subtle p-2 border-opacity-5">
+        <p class="discuss__link"> Juggling Multiple Projects: How Do You Stay Sane?
+          <div class="discuss__comments "> 1 comment </div>
           </p>
-          <p class="sub">forhire</p>
-        </div>
-        <div class="each">
-          <p>
-            I am available to for 1:1 Mentoring, Mock interviews, career
-            guidance.
+      </div>
+      <div class="each border-top border-light-subtle p-2 border-opacity-5">
+        <p class="discuss__link">
+          Cracking the Work-Life Balance Code: Unconventional Strategies for Remote Developers
+        <div class="discuss__comments ">2 comments </div>
+        </p>
+      </div>
+      <div class="each border-top border-ligh-subtle p-2 border-opacity-5">
+        <p class="discuss__link">
+          Overcoming Skill Plateaus: How Do You Keep Growing?
+        <div class="watercooler__comments">5 comments </div>
+        </p>
+      </div>
+    </div>
+
+    
+    <div class="right">
+      <div class="each watercooler__div border-ligh-subtle p-2 border-opacity-5">
+        <header class="watercooler__header  p-3">
+          <h3>#watercooler</h3>
+        </header>
+        <div class="each border border-ligh-subtle p-2 border-opacity-5">
+          <p class="watercooler__link">
+            Meme Monday
+          <div class=" each watercooler__comments ">34 comments </div>
           </p>
-          <p class="sub">mentors</p>
         </div>
-        <div class="each">
-          <p>
-            30+ Ultimate Chrome extensions handbook: Supercharge your browsing
-            experience
+        <div class="each border-top border-ligh-subtle p-2 border-opacity-5">
+          <p class="watercooler__link"> How did you get interested in software development?
+          <div class="watercooler__comments ">14 comments </div>
           </p>
-          <p class="sub">collabs</p>
         </div>
-        <div class="each">
-          <p>
-            Improve your HTML and CSS skills by practicing on real design
-            templates.
+        <div class="each border-top border-ligh-subtle p-2 border-opacity-5">
+          <p class="watercooler__link">
+            Music Monday — What are you listening to? (Pop Edition)
+          <div class="watercooler__comments ">5 comments </div>
           </p>
-          <p class="sub">products</p>
         </div>
-        <div class="each">
-          <p>Playright Test Automation Mentorship</p>
-          <p class="sub">mentors</p>
+        <div class="each border-top border-ligh-subtle p-2 border-opacity-5">
+          <p class="watercooler__link">
+            How to Manage Your Time as Software Developer ⌛️
+          <div class="watercooler__comments">8 comments </div>
+          </p>
         </div>
-        <div class="each">
-          <h3 class="createListing">Create a Listing</h3>
+        <div class="each wborder-ligh-subtle p-2 border-opacity-5">
+          <p class="watercooler__link"> The ideal, professional workplace</p>
+          <div class="img__watercooler">
+            <img class="new__img" src="/imagenes/Captura de pantalla 2023-06-15 a la(s) 1.34.16.png" alt="New">
+          </div>
         </div>
       </div>
     </div>
-    <!--Aside de la derecha Mich-->
-    <aside class="discuss_watercooler__section col-3 d-none d-lg-block">
-      <section class="discuss__section">
-       <div class="discuss__div float-lg-end rounded-3 border m-5 border-light-subtle border-opacity-5">
-         <header class="discuss__header p-3"> <h3>#discuss</h3></header>
-         <div class="border border-top border-light-subtle p-2 border-opacity-5">
-            <p class="discuss__link">
-                🌟 AI TOOLS TO GENERATE YOUR NEXT BUSINESS IDEA WORTH $100K 🌟 <div class="discuss__img"><img class="new__img" src="/imagenes/Captura de pantalla 2023-06-15 a la(s) 1.34.16.png" alt="New"></div> 
-            </p>
-         </div>    
-         <div class="border-top border-light-subtle p-2 border-opacity-5">
-            <p class="discuss__link"> Juggling Multiple Projects: How Do You Stay Sane?
-                <div class="discuss__comments "> 1 comment </div> 
-            </p>
-         </div>  
-         <div class="border-top border-light-subtle p-2 border-opacity-5">
-            <p class="discuss__link">
-                Cracking the Work-Life Balance Code: Unconventional Strategies for Remote Developers
-                <div class="discuss__comments ">2 comments </div> 
-            </p>
-         </div>  
-         <div class="border-top border-ligh-subtle p-2 border-opacity-5">
-            <p class="discuss__link">
-                Overcoming Skill Plateaus: How Do You Keep Growing?
-              <div class="watercooler__comments">5 comments </div> 
-            </p>
-         </div>  
-       </div>   
-      </section>  
+   
 
-      <section class="watercooler__section">
-        <div class="watercooler__div float-lg-end rounded-3 border m-5 border-light-subtle border-opacity-5">
-         <header class="watercooler__header  p-3"> <h3>#watercooler</h3></header>
-         <div class="border border-top border-light-subtle p-2 border-opacity-5">
-            <p class="watercooler__link">
-             Meme Monday <div class="watercooler__comments ">34 comments </div> 
-            </p>
-         </div>    
-         <div class="border-top border-light-subtle p-2 border-opacity-5">
-            <p class="watercooler__link"> How did you get interested in software development?
-                <div class="watercooler__comments ">14 comments </div> 
-            </p>
-         </div>  
-         <div class="border-top border-light-subtle p-2 border-opacity-5">
-            <p class="watercooler__link">
-                Music Monday — What are you listening to? (Pop Edition) <div class="watercooler__comments ">5 comments </div> 
-            </p>
-         </div>  
-         <div class="border-top border-ligh-subtle p-2 border-opacity-5">
-            <p class="watercooler__link">
-             How to Manage Your Time as Software Developer ⌛️<div class="watercooler__comments">8 comments </div> 
-            </p>
-         </div>  
-         <div class="watercooler__div border-top border-light-subtle p-2 border-opacity-2">
-            <p class="watercooler__link"> The ideal, professional workplace</p> <div class="img__watercooler">
-                <img class="new__img" src="/imagenes/Captura de pantalla 2023-06-15 a la(s) 1.34.16.png" alt="New">
-            </div>
-         </div>    
-       </div> 
-      </section>
-          
-    </aside>
+  </div>
+
+  </div>
+
+  <!--Aside de la derecha Kathy-->
+
+
+  <!--Aside de la derecha Mich-->
 
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
 </body>
 <!--Footer Guadalupe-->
 <footer class="container-fluid text-center">
@@ -843,7 +886,7 @@
         <span class="dot ml-2"></span>
       </li>
       <li ">
-    <a href=" #">
+  <a href=" #">
         Podcasts
         </a>
         <span class="#"></span>
@@ -910,9 +953,9 @@
         </a>
         <span class="dot ml-2"></span>
       </li>
-      <li >
-    <a href=" #">
-        Privacy Policy
+      <li>
+        <a href=" #">
+          Privacy Policy
         </a>
         <span class="dot ml-2"></span>
       </li>
@@ -934,8 +977,126 @@
       </p>
     </div>
   </div>
-</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  </body>
+  <!--Footer Guadalupe-->
+  <footer class="container-fluid text-center">
+    <div class="justify-center" id="footer-container" class="crayons-footer__container">
+      <p class="fs-s crayons-footer__description">
+        <a class="c-link c-link--branded fw-medium" aria-label="DEV Community Home" href="/">DEV Community</a> — A
+        constructive and inclusive social network for software developers. With you every step of your journey.
+      </p>
+
+      <ul class="d-flex justify-content-center gap-4">
+        <li>
+          <a href="#">
+            Home
+          </a>
+          <span class="dot ml-2"></span>
+        </li>
+        <li>
+          <a href="#">
+            Listings
+          </a>
+          <span class="dot ml-2"></span>
+        </li>
+        <li ">
+    <a href=" #">
+          Podcasts
+          </a>
+          <span class="#"></span>
+        </li>
+        <li>
+          <a href="#">
+            Videos
+          </a>
+          <span class="dot ml-2"></span>
+        </li>
+        <li>
+          <a href="#">
+            Tags
+          </a>
+          <span class="dot ml-2"></span>
+        </li>
+        <li>
+          <a href="#">
+            FAQ
+          </a>
+          <span class="dot ml-2"></span>
+        </li>
+        <li>
+          <a href="#">
+            Forem Shop
+          </a>
+          <span class="dot ml-2"></span>
+        </li>
+        <li>
+          <a href="#">
+            Sponsors
+          </a>
+          <span class="dot ml-2"></span>
+        </li>
+        <li>
+          <a href="#">
+            About
+          </a>
+          <span class="dot ml-2"></span>
+        </li>
+        <li>
+          <a href="#">
+            Contact
+          </a>
+          <span class="dot ml-2"></span>
+        </li>
+        <li>
+          <a href="#">
+            Guides
+          </a>
+          <span class="dot ml-2"></span>
+        </li>
+      </ul>
+      <li class="footer__nav">
+        <a href="#">
+          Software comparisons
+        </a>
+        <span class="dot ml-2"></span>
+      </li>
+      <ul class="d-flex justify-content-center gap-4">
+        <li class="footer__nav">
+          <a href="#">
+            Code of Conduct
+          </a>
+          <span class="dot ml-2"></span>
+        </li>
+        <li ">
+    <a href=" #">
+          Privacy Policy
+          </a>
+          <span class="dot ml-2"></span>
+        </li>
+        <li>
+          <a href="#">
+            Terms of use
+          </a>
+          <span class="dot ml-2"></span>
+        </li>
+      </ul>
+
+      <div class="fs-s">
+        <p>Built on <a class="c-link c-link--branded" target="_blank" rel="noopener"
+            href="https://www.forem.com">Forem</a> — the <a target="_blank" rel="noopener"
+            class="c-link c-link--branded" href="https://dev.to/t/opensource">open source</a> software that powers <a
+            target="_blank" rel="noopener" class="c-link c-link--branded" href="https://dev.to">DEV</a> and other
+          inclusive communities.</p>
+        <p>Made with love and <a target="_blank" rel="noopener" class="c-link c-link--branded"
+            href="https://dev.to/t/rails">Ruby on Rails</a>. DEV Community <span title="copyright">©</span> 2016 - 2023.
+        </p>
+      </div>
+    </div>
+  </footer>
 
 </html>
-
-
