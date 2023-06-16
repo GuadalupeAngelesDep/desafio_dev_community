@@ -36,7 +36,9 @@ body {
     color: black;
 }
 /*Aside izquierda (Nefer) */
-
+.tags__section {
+    display: none;
+}
 
 /*Aside de la derecha Kathy*/
 
@@ -65,6 +67,12 @@ footer{
 
     /*Aside izquierda (Nefer) */
 
+.tags__section {
+    display: block;
+}
+
+
+}
 
     /*Aside de la derecha Kathy*/
 
@@ -75,10 +83,16 @@ footer{
 
 
 
+
+/*footer*/
+
+@media only screen and (min-width:1024px){
+
     /*footer*/
 }
 
 @media only screen and (min-width:1024px) {
+
     /*Navbar */
     /*Aside izquierda (Nefer) */
 
