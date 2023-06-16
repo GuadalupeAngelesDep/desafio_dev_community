@@ -3,7 +3,10 @@
 /*Aside izquierda (mario) */
 .post_socials{
   padding-left: 50px;
+  position: sticky;
+    top: 0;
 }
+
 
 .body_card{
   width: 805px;
@@ -16,9 +19,7 @@
   display: block;
 }
 
-// .post_main_reactions{
-//   margin-left: 40px;
-// }
+
 
 .post_date{
   font-size: 13px;
@@ -47,9 +48,27 @@
   background-color: #ebecfc;
 }
 
-// .subscribe_button{
-//   box-shadow: 3px solid black ;
-// }
+.post_rules{
+  font-size: 12px;
+}
+
+.body_card_read{
+  width: 100%;
+}
+
+.crayons-avatar_image{
+  height: 50px;
+  width: 40px;
+}
+
+.read_next_info{
+  font-size: 20px;
+}
+
+.read_next_date{
+  font-size: 17px;
+}
+
 
 
     /*Aside de la derecha victor*/
