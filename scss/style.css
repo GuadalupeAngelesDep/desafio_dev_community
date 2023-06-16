@@ -20,6 +20,10 @@
   /*Aside de la derecha Kathy*/
   /*Main Christian*/
   /*Aside de la derecha Mich*/
+  .discuss_catercoller__section {
+    display: flex;
+    flex-direction: column;
+  }
   .watercooler__section {
     margin-top: 60px;
   }

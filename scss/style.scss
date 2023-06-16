@@ -46,7 +46,13 @@
 
    
    /*Aside de la derecha Mich*/ 
-   .watercooler__section {
+.discuss_catercoller__section {
+    display:flex;
+    flex-direction:column;
+    
+}
+   
+ .watercooler__section {
     margin-top: 60px;
    }
  .watercooler__header:hover {
@@ -54,16 +60,16 @@
  }
  .watercooler__link:hover {
     color: rgb(59, 73, 223, 1);
-}
-.new__img {
+ }
+ .new__img {
     width: 33px;
     height: 26px;
-}
-.discuss__header:hover {
+ }
+ .discuss__header:hover {
     color: rgb(59, 73, 223, 1); 
-}
-.discuss__link:hover {
+ }
+ .discuss__link:hover {
     color: rgb(59, 73, 223, 1);
-}
+ }
 /*footer*/
 }
