@@ -1,0 +1,31 @@
+.right {
+  width: 40%;
+  border: 20px solid lightgray;
+  background-color: white;
+  border: 3px solid lightgray;
+  border-radius: 10px;
+}
+
+.header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.each {
+  padding: 10px;
+  border-top: 3px solid lightgray;
+}
+
+.createListing {
+  text-align: center;
+}
+
+.seeAll {
+  color: blue;
+}
+
+.sub {
+  color: gray;
+}
