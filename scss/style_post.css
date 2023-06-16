@@ -1,0 +1,82 @@
+/*Seccion MOBILE */
+/*Navbar */
+/*Aside izquierda (mario) */
+/*Aside de la derecha victor*/
+/*Main mario*/
+/*footer*/
+/*Seccion  Tableta*/
+@media only screen and (min-width: 768px) {
+  /*Aside izquierda (mario) */
+  /*Aside de la derecha victor*/
+  /*Main mario*/
+  /*footer*/
+}
+/*Aside izquierda (mario) */
+/*Aside de la derecha victor*/
+.aside__right {
+  width: 297px;
+}
+
+.div__link--blue {
+  margin-left: 50px;
+  padding-bottom: 10px;
+}
+
+.card-header {
+  display: inline-block;
+  font-size: 1.5rem;
+}
+
+.icon__documatic {
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  top: 10px;
+}
+
+.h3__link--blue {
+  text-decoration: none;
+}
+
+.list-group-item {
+  font-size: 0.875rem;
+  padding-top: 0.25rem;
+  color: #717171;
+  text-decoration: none;
+}
+
+.text__location-toronto {
+  font-size: 0.7rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: rgb(82, 82, 82);
+}
+
+.span__text {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  color: rgb(82, 82, 82);
+}
+
+.card-header {
+  height: 45px;
+}
+
+.colunm__aside--tree {
+  height: 505px;
+  align-items: center;
+  padding: 5px;
+}
+
+.img__aside--tree {
+  width: 90%;
+  height: 136px;
+  padding: 1%;
+}
+
+.button_readfull--blue {
+  width: 90%;
+}
+
+/*Main mario*/
+/*footer*//*# sourceMappingURL=style_post.css.map */
