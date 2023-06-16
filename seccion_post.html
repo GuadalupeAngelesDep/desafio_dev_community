@@ -141,11 +141,13 @@
 
               <p>Let's start by creating a simple view that will return a simple Hello World text.</p>
 
-              <p>For that, we first need to tell Django to include our app (the app that we created before using the django-admin
-              startapp command) in the project.</p>
+              <p>For that, we first need to tell Django to include our app (the app that we created before using the
+                django-admin
+                startapp command) in the project.</p>
 
-              <P>We will open the settings.py file. There would be a list named INSTALLED_APPS . We just need to add our app name to that
-              file. This allows Django to recognize and include your app in the project.</P>
+              <P>We will open the settings.py file. There would be a list named INSTALLED_APPS . We just need to add our
+                app name to that
+                file. This allows Django to recognize and include your app in the project.</P>
 
               <P>Somewhat like this:</P>
 
@@ -155,17 +157,20 @@
               </section>
 
               <p class="mt-3">Here, quiz is the name of the app I created before.</p>
-                              
-              <P>Now, we will create a function that will take the request as a parameter & return Hello World! or anything you like.
-              Kindly note, that request is a required parameter as it will contain all the details of the HTTP request.</p>
-              
+
+              <P>Now, we will create a function that will take the request as a parameter & return Hello World! or
+                anything you like.
+                Kindly note, that request is a required parameter as it will contain all the details of the HTTP
+                request.</p>
+
               <P>We will create this function in quiz/views.py file.</p>
-              
+
               <P>Since we want to return plain text in the HTTP response, we will import it here.</p>
-              
-              <P>HttpResponse is used to return plain text in the HTTP response. django.shortcuts already provide us with many methods
-              through which we can return data.</p>
-              
+
+              <P>HttpResponse is used to return plain text in the HTTP response. django.shortcuts already provide us
+                with many methods
+                through which we can return data.</p>
+
               <P>The file will look like this:</p>
 
               <section class="d-flex">
@@ -173,17 +178,20 @@
               </section>
 
               <p class="mt-3">Now to map this function to the home URL, we will edit the urls.py file.</p>
-              <p>urls.py file already contains a list by the name of urlpatterns. We will add our routes to this. Since we want to
-              display Hello World on our homepage, our path will just be an empty string. And to map it to that function, we will
-              import quiz.views here.</p>
+              <p>urls.py file already contains a list by the name of urlpatterns. We will add our routes to this. Since
+                we want to
+                display Hello World on our homepage, our path will just be an empty string. And to map it to that
+                function, we will
+                import quiz.views here.</p>
               <p>Our views.py file should look something like this now:</p>
 
               <section class="d-flex">
                 <img class="post_image rounded-2" src="/imagenes/Screenshot_2.png" alt="">
               </section>
 
-              <p class="mt-3">The name parameter in the path is optional and used for naming the URL pattern, allowing you to refer to it by name in
-              other parts of the code.</p>
+              <p class="mt-3">The name parameter in the path is optional and used for naming the URL pattern, allowing
+                you to refer to it by name in
+                other parts of the code.</p>
               <p>Awesome, we have made our first view. Now to test it, we will run it using the following command</p>
 
               <section>
@@ -192,58 +200,356 @@
 
               <p class="mt-3">This will start the Django server & will serve it to the local host.</p>
               <p>And now, when we go to http://127.0.0.1:8000/ we will see Hello World! on that page 🎉</p>
-              <p>And there you have it! We have successfully created our first view in Django that displays 'Hello World!' when accessing
-              the homepage. This simple example lays the foundation for building more complex views and functionalities in your Django
-              project. Keep exploring and experimenting with Django to unlock its full potential!</p>
+              <p>And there you have it! We have successfully created our first view in Django that displays 'Hello
+                World!' when accessing
+                the homepage. This simple example lays the foundation for building more complex views and
+                functionalities in your Django
+                project. Keep exploring and experimenting with Django to unlock its full potential!</p>
               <p>In the next blog, we will explore more about Django templating.</p>
-              
-            </section>
 
-            <section class="post_comments d-flex justify-content-start">
-              <section class="row">
-                <section class="col-4 d-flex justify-content-start">Top comments(3)</section>
-                <section class="col-6 d-flex"><button class="c-btn c-btn--ghost crayons-btn--icon-left" id="toggle-comments-sort-dropdown"
-                  aria-controls="comments-sort-dropdown-container" aria-expanded="false" aria-label="Sort comments" aria-haspopup="true"
-                  data-initialized="true">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" class="mt-2">
-                    <title>Crown</title>
-                    <path
-                      d="M12 18l-4-3.771 1-.943 3 2.829 3-2.829 1 .943L12 18zm0-10.115l-3 2.829-1-.943L12 6l4 3.771-1 .942-3-2.828z">
-                    </path>
-                  </svg>
-                
-                </button> 
-                </section>
-                <section class="col-2 d-flex">
-                  <section class="btn">
-                    <button class="crayons-btn crayons-btn--outlined" type="button"
-                      data-tracking-name="comment_subscription_toggle">Subscribe</button>
+            </section>
+          </section>
+
+          <section class="card mb-3">
+            <section class="card-body">
+
+              <section class="post_comments container">
+                <section class="row">
+                  <section class="top_comments col d-flex justify-content-end">Top comments(3)
+
+                  </section>
+
+                  <section class="col d-flex justify-content-start"><button
+                      class="first_button btn btn-light crayons-btn--icon-left" id="toggle-comments-sort-dropdown"
+                      aria-controls="comments-sort-dropdown-container" aria-expanded="false" aria-label="Sort comments"
+                      aria-haspopup="true" data-initialized="true">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        aria-hidden="true" class="mt-2">
+                        <title>Crown</title>
+                        <path
+                          d="M12 18l-4-3.771 1-.943 3 2.829 3-2.829 1 .943L12 18zm0-10.115l-3 2.829-1-.943L12 6l4 3.771-1 .942-3-2.828z">
+                        </path>
+                      </svg>
+
+                    </button>
+                  </section>
+                  <section class="col d-flex justify-content-end">
+                    <section class="btn">
+                      <button class="subscribe_button btn btn-outline-secondary text-black shadow-sm bg-body rounded"
+                        type="button" data-tracking-name="comment_subscription_toggle">Subscribe</button>
+                    </section>
                   </section>
                 </section>
+
+                <section class="add_comment d-flex mt-4">
+                  <section class="col-1 d-flex justify-content-center">
+                    <img class="rounded-circle"
+                      src="https://res.cloudinary.com/practicaldev/image/fetch/s--CtXBT2Zd--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/1101030/3d3e1c63-ab65-4489-81dd-5f51f3437dc5.png"
+                      width="32" height="32" alt="pic" class="crayons-avatar__image overflow-hidden"
+                      id="comment-primary-user-profile--avatar" loading="lazy">
+                  </section>
+
+                  <section class="write_your_comment col-11 ">
+                    <section class="mb-3">
+
+                      <textarea class="form-control " input type="text" class="form-control"
+                        placeholder="Add to the discussion" id="exampleFormControlTextarea1" rows="3"></textarea>
+
+                    </section>
+                  </section>
+
+                </section>
+                <!--first comment-->
+                <section class="other_comments d-flex mt-4">
+                  <section class="col-1 d-flex justify-content-center flex-column align-items-center ">
+                    <img class="rounded-circle crayons-avatar__image" width="32" height="32"
+                      src="https://res.cloudinary.com/practicaldev/image/fetch/s--DaO5ggJA--/c_fill,f_auto,fl_progressive,h_50,q_auto,w_50/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/1096968/4276af89-0fc8-4266-85ae-33c14eaaff6c.jpeg"
+                      alt="bogomil profile image" loading="lazy">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img"
+                      aria-labelledby="ao2v3k8blb53tlxir112p8rt44rzwd4k" class="crayons-icon expanded">
+                      <title id="ao2v3k8blb53tlxir112p8rt44rzwd4k">Collapse</title>
+                      <path
+                        d="M12 10.677L8 6.935 9 6l3 2.807L15 6l1 .935-4 3.742zm0 4.517L9 18l-1-.935 4-3.742 4 3.742-1 .934-3-2.805z">
+                      </path>
+                    </svg>
+
+                  </section>
+
+
+                  <section class="write_your_comment col border border-lighter  d-flex  justify-content-between">
+                    <section class="container">
+                      <section class="row">
+
+                        <section class="col-10 fw-bold">
+                          Bogomil Shopov - Bogo <span class="text-muted">• 15 June</span>
+                        </section>
+
+
+
+                        <section class="mb-2 col-2 d-flex justify-content-end">
+                          <button id="comment-dropdown-trigger-1044493" aria-controls="comment-dropdown-1044493"
+                            aria-expanded="false" class="btn  " aria-label="Toggle dropdown menu" aria-haspopup="true"
+                            data-initialized="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                              role="img" aria-labelledby="aoknez2z9h6g649kjvtb9x34cla1qazz"
+                              class="crayons-icon pointer-events-none">
+                              <title id="aoknez2z9h6g649kjvtb9x34cla1qazz">Dropdown menu</title>
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M8.25 12a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm5.25 0a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm3.75 1.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z">
+                              </path>
+                            </svg>
+
+                          </button>
+
+
+                        </section>
+                      </section>
+                      <section class="row">
+                        <section class="mb-3">
+                          Whoa. this is pretty cool!
+                        </section>
+                      </section>
+                    </section>
+
+
+
+
+                  </section>
+
+                </section>
+
+
+                <section class="d-flex">
+                  <section class="d-flex likes_comments col-3 justify-content-center ">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img"
+                      aria-labelledby="afrfoismhnnnfzvrg5oeczhlql8nas6h" class="crayons-icon reaction-icon not-reacted">
+                      <title id="afrfoismhnnnfzvrg5oeczhlql8nas6h">Like comment: </title>
+                      <path
+                        d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z">
+                      </path>
+                    </svg>
+                    <span>3 Likes</span>
+
+
+                  </section>
+
+                  <section class="reply col-9">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img"
+                      id="aazc01sxfcje49pgbcqpvlt8qdq223jd">Comment button</title>
+                      <path
+                        d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z">
+                      </path>
+                    </svg>
+
+                    <span class="hidden m:inline-block">Reply</span>
+
+                  </section>
+                </section>
+
+
+              
+              <!--second comment-->
+              <section class="other_comments d-flex mt-4">
+                <section class="col-1 d-flex justify-content-center flex-column align-items-center ">
+                  <img class="rounded-circle crayons-avatar__image" width="32" height="32"
+                    src="https://res.cloudinary.com/practicaldev/image/fetch/s--isQ9XTSa--/c_fill,f_auto,fl_progressive,h_50,q_auto,w_50/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/1100596/b83dc20e-35d8-4816-b758-c17ddd2376a7.png"
+                    alt="usegen profile image" loading="lazy">
+              
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img"
+                    aria-labelledby="ao2v3k8blb53tlxir112p8rt44rzwd4k" class="crayons-icon expanded">
+                    <title id="ao2v3k8blb53tlxir112p8rt44rzwd4k">Collapse</title>
+                    <path
+                      d="M12 10.677L8 6.935 9 6l3 2.807L15 6l1 .935-4 3.742zm0 4.517L9 18l-1-.935 4-3.742 4 3.742-1 .934-3-2.805z">
+                    </path>
+                  </svg>
+              
+                </section>
+              
+              
+                <section class="write_your_comment col border border-lighter  d-flex  justify-content-between">
+                  <section class="container">
+                    <section class="row">
+              
+                      <section class="col-10 fw-bold">
+                        usegen <span class="text-muted">• 15 June</span>
+                      </section>
+              
+              
+              
+                      <section class="mb-2 col-2 d-flex justify-content-end">
+                        <button id="comment-dropdown-trigger-1044493" aria-controls="comment-dropdown-1044493" aria-expanded="false"
+                          class="btn  " aria-label="Toggle dropdown menu" aria-haspopup="true" data-initialized="true">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img"
+                            aria-labelledby="aoknez2z9h6g649kjvtb9x34cla1qazz" class="crayons-icon pointer-events-none">
+                            <title id="aoknez2z9h6g649kjvtb9x34cla1qazz">Dropdown menu</title>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M8.25 12a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm5.25 0a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm3.75 1.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z">
+                            </path>
+                          </svg>
+              
+                        </button>
+              
+              
+                      </section>
+                    </section>
+                    <section class="row">
+                      <section class="mb-3">
+                        Do we need to use both Supabase and Material UI?
+                      </section>
+                    </section>
+                  </section>
+              
+              
+              
+              
+                </section>
+              
               </section>
+              
+              
+              <section class="d-flex">
+                <section class="d-flex likes_comments col-3 justify-content-center ">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img"
+                    aria-labelledby="afrfoismhnnnfzvrg5oeczhlql8nas6h" class="crayons-icon reaction-icon not-reacted">
+                    <title id="afrfoismhnnnfzvrg5oeczhlql8nas6h">Like comment: </title>
+                    <path
+                      d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z">
+                    </path>
+                  </svg>
+                  <span>1 Likes</span>
+              
+              
+                </section>
+              
+                <section class="reply col-9">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img"
+                    id="aazc01sxfcje49pgbcqpvlt8qdq223jd">Comment button</title>
+                    <path
+                      d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z">
+                    </path>
+                  </svg>
+              
+                  <span class="hidden m:inline-block">Reply</span>
+              
+                </section>
+              </section>
+
+
+              <!--third comment-->
+
+
+              <section class="other_comments d-flex mt-4">
+                <section class="col-1 d-flex justify-content-center flex-column align-items-center ">
+                  <img class="crayons-avatar__image" width="32" height="32"
+                    src="https://res.cloudinary.com/practicaldev/image/fetch/s--d2mRh_o7--/c_fill,f_auto,fl_progressive,h_50,q_auto,w_50/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/1102253/2e933270-4d7d-40af-898b-d460508fda00.jpg"
+                    alt="pipomam64868566 profile image" loading="lazy">
+              
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img"
+                    aria-labelledby="ao2v3k8blb53tlxir112p8rt44rzwd4k" class="crayons-icon expanded">
+                    <title id="ao2v3k8blb53tlxir112p8rt44rzwd4k">Collapse</title>
+                    <path
+                      d="M12 10.677L8 6.935 9 6l3 2.807L15 6l1 .935-4 3.742zm0 4.517L9 18l-1-.935 4-3.742 4 3.742-1 .934-3-2.805z">
+                    </path>
+                  </svg>
+              
+                </section>
+              
+              
+                <section class="write_your_comment col border border-lighter  d-flex  justify-content-between">
+                  <section class="container">
+                    <section class="row">
+              
+                      <section class="col-10 fw-bold">
+                        pipomam648 <span class="text-muted">• 15 June</span>
+                      </section>
+              
+              
+              
+                      <section class="mb-2 col-2 d-flex justify-content-end">
+                        <button id="comment-dropdown-trigger-1044493" aria-controls="comment-dropdown-1044493" aria-expanded="false"
+                          class="btn  " aria-label="Toggle dropdown menu" aria-haspopup="true" data-initialized="true">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img"
+                            aria-labelledby="aoknez2z9h6g649kjvtb9x34cla1qazz" class="crayons-icon pointer-events-none">
+                            <title id="aoknez2z9h6g649kjvtb9x34cla1qazz">Dropdown menu</title>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M8.25 12a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm5.25 0a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm3.75 1.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z">
+                            </path>
+                          </svg>
+              
+                        </button>
+              
+              
+                      </section>
+                    </section>
+                    <section class="row">
+                      <section class="mb-3">
+                        I just got paid $6850 working off my laptop this month. And if you think that's cool, my divorced friend has twin
+                        toddlers and made over $ 13796 her first month. It feels so good making so much money when other people have to work for
+                        so much less.
+                      </section>
+                    </section>
+                  </section>
+              
+              
+              
+              
+                </section>
+              
+              </section>
+              
+              
+              <section class="d-flex">
+                <section class="d-flex likes_comments col-3 justify-content-center ">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img"
+                    aria-labelledby="afrfoismhnnnfzvrg5oeczhlql8nas6h" class="crayons-icon reaction-icon not-reacted">
+                    <title id="afrfoismhnnnfzvrg5oeczhlql8nas6h">Like comment: </title>
+                    <path
+                      d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z">
+                    </path>
+                  </svg>
+                  <span>1 Likes</span>
+              
+              
+                </section>
+              
+                <section class="reply col-9">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img"
+                    id="aazc01sxfcje49pgbcqpvlt8qdq223jd">Comment button</title>
+                    <path
+                      d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z">
+                    </path>
+                  </svg>
+              
+                  <span class="hidden m:inline-block">Reply</span>
+              
+                </section>
+              </section>
+
+              </section>
+
             </section>
-
-
-
 
 
           </section>
-
-
-
-
-
-
         </section>
 
 
 
 
-      </main>
 
-      <!--lo de victor-->
+
 
     </section>
+
+
+
+
+    </main>
+
+    <!--lo de victor-->
+
+  </section>
 
 
 

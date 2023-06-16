@@ -35,6 +35,15 @@
   width: 100%;
 }
 
+.top_comments {
+  font-weight: 500;
+  font-size: 25px;
+}
+
+.first_button {
+  background-color: #ebecfc;
+}
+
 /*Aside de la derecha victor*/
 /*Main mario*/
 /*footer*/
