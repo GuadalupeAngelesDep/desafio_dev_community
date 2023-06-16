@@ -169,7 +169,7 @@
               <P>The file will look like this:</p>
 
               <section class="d-flex">
-                <img src="/imagenes/Screenshot_1.png" alt="">
+                <img class="post_image rounded-2" src="/imagenes/Screenshot_1.png" alt="">
               </section>
 
               <p class="mt-3">Now to map this function to the home URL, we will edit the urls.py file.</p>
@@ -178,7 +178,55 @@
               import quiz.views here.</p>
               <p>Our views.py file should look something like this now:</p>
 
+              <section class="d-flex">
+                <img class="post_image rounded-2" src="/imagenes/Screenshot_2.png" alt="">
+              </section>
+
+              <p class="mt-3">The name parameter in the path is optional and used for naming the URL pattern, allowing you to refer to it by name in
+              other parts of the code.</p>
+              <p>Awesome, we have made our first view. Now to test it, we will run it using the following command</p>
+
+              <section>
+                <img class="post_image rounded-2" src="/imagenes/Screenshot_3.png" alt="">
+              </section>
+
+              <p class="mt-3">This will start the Django server & will serve it to the local host.</p>
+              <p>And now, when we go to http://127.0.0.1:8000/ we will see Hello World! on that page 🎉</p>
+              <p>And there you have it! We have successfully created our first view in Django that displays 'Hello World!' when accessing
+              the homepage. This simple example lays the foundation for building more complex views and functionalities in your Django
+              project. Keep exploring and experimenting with Django to unlock its full potential!</p>
+              <p>In the next blog, we will explore more about Django templating.</p>
+              
             </section>
+
+            <section class="post_comments d-flex justify-content-start">
+              <section class="row">
+                <section class="col-4 d-flex justify-content-start">Top comments(3)</section>
+                <section class="col-6 d-flex"><button class="c-btn c-btn--ghost crayons-btn--icon-left" id="toggle-comments-sort-dropdown"
+                  aria-controls="comments-sort-dropdown-container" aria-expanded="false" aria-label="Sort comments" aria-haspopup="true"
+                  data-initialized="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" class="mt-2">
+                    <title>Crown</title>
+                    <path
+                      d="M12 18l-4-3.771 1-.943 3 2.829 3-2.829 1 .943L12 18zm0-10.115l-3 2.829-1-.943L12 6l4 3.771-1 .942-3-2.828z">
+                    </path>
+                  </svg>
+                
+                </button> 
+                </section>
+                <section class="col-2 d-flex">
+                  <section class="btn">
+                    <button class="crayons-btn crayons-btn--outlined" type="button"
+                      data-tracking-name="comment_subscription_toggle">Subscribe</button>
+                  </section>
+                </section>
+              </section>
+            </section>
+
+
+
+
+
           </section>
 
 
