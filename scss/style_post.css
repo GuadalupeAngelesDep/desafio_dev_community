@@ -1,10 +1,6 @@
 /*Seccion MOBILE */
 /*Navbar */
 /*Aside izquierda (mario) */
-.post_main {
-  margin-top: 60px;
-}
-
 post_socials_like {
   position: absolute;
   top: 40px;
@@ -25,6 +21,12 @@ post_socials_like {
   width: 805px;
   position: relative;
   left: 95px;
+  margin-top: 70px;
+}
+
+.post_main {
+  position: relative;
+  right: 90px;
 }
 
 /*Aside de la derecha victor*/

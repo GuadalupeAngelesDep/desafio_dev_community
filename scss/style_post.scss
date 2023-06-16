@@ -2,9 +2,9 @@
  /*Navbar */
 /*Aside izquierda (mario) */
 
-.post_main{
-  margin-top: 60px;
-}
+// .post_main{
+//   margin-top: 70px;
+// }
 
 post_socials_like{
   position: absolute;
@@ -20,14 +20,24 @@ post_socials_like{
 .post_main_picture_dev{
   height: 340px;
   width: 805px;
+  
 }
 
 .post_main_information{
   width: 805px;
   position: relative;
   left:95px;
+  margin-top: 70px;
 
 }
+
+.post_main{
+  position: relative;
+  right: 90px;
+  
+}
+
+
     /*Aside de la derecha victor*/
 
     /*Main mario*/
