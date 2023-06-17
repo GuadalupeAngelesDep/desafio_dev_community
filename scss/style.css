@@ -9,13 +9,13 @@ body {
     width: 20vw;
 }
 .button__post{
-    border-color: $color_secundary_purple;
-    color: $color_secundary_purple;
+    border-color: rgb( 59, 73, 223);
+    color: rgb( 59, 73, 223);
     display: none;
 }
 
 .button__post:hover{
-    background-color: $color_secundary_purple;
+    background-color:rgb( 59, 73, 223);
     color: #efefef;
 }
 .icon__size {
