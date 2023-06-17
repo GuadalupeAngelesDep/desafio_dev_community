@@ -93,6 +93,146 @@ footer{
 }
 
 
+.aside__right {
+      width: 297px;
+    }
+
+  
+    .div__link--blue {
+      margin-left: 50px;
+      padding-bottom: 10px;
+      
+    }
+
+    .card-header {
+      display: inline-block;
+      font-size: 1.5rem;
+    }
+
+    .icon__documatic {
+      width: 48px;
+      height: 48px;
+      position: absolute;
+      top: 10px;
+    }
+
+    .h3__link--blue {
+      text-decoration: none;
+    
+    }
+
+   
+    .list-group-item {
+      //  height: 126px;
+       font-size: 0.875rem;
+       padding-top: 0.25rem;
+       color: #717171;
+       text-decoration: none;
+      
+    }
+
+    .text__location-toronto {
+      font-size: 0.70rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: rgb( 82, 82, 82 );
+    }
+
+    .span__text {
+      font-size: 0.70rem;      
+      text-transform: uppercase;
+      color: rgb( 82, 82, 82 );
+    }
+
+    .card-header {
+     height: 45px;
+
+    }    
+ 
+    .colunm__aside--tree {
+      height: 505px;
+      align-items: center;
+      padding: 5px;
+    }
+
+    .img__aside--tree {
+      width: 90%;
+      height: 136px;
+      padding: 1%;
+    }
+
+    .button_readfull--blue {
+      width: 90%;
+    }
+/*Aside izquierda (mario) */
+.post_socials{
+  padding-left: 50px;
+  height: 100%;
+  position: sticky;
+  top: 0;
+}
+
+
+.body_card{
+  width: 805px;
+}
+
+.crayons-article__cover__image{
+  width: 100%;
+  object-fit: cover;
+  height: 25vw;
+  display: block;
+}
+
+
+
+.post_date{
+  font-size: 13px;
+}
+
+.post_title{
+  font-weight: 800;
+  font-size: 45px;
+}
+
+.post_subtitle{
+  font-weight: 500;
+  font-size: 25px;
+}
+
+.post_image{
+  width: 100%;;
+}
+
+.top_comments{
+  font-weight: 500;
+  font-size: 25px;
+}
+
+.first_button{
+  background-color: #ebecfc;
+}
+
+.post_rules{
+  font-size: 12px;
+}
+
+.body_card_read{
+  width: 100%;
+}
+
+.crayons-avatar_image{
+  height: 50px;
+  width: 40px;
+}
+
+.read_next_info{
+  font-size: 20px;
+}
+
+.read_next_date{
+  font-size: 17px;
+}
 
 
 /*Seccion  Tableta*/
